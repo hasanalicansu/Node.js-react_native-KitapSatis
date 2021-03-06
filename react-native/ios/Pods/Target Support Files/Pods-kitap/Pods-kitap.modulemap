@@ -1,0 +1,6 @@
+module Pods_kitap {
+  umbrella header "Pods-kitap-umbrella.h"
+
+  export *
+  module * { export * }
+}

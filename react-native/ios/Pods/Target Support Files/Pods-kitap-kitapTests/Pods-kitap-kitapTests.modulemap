@@ -1,0 +1,6 @@
+module Pods_kitap_kitapTests {
+  umbrella header "Pods-kitap-kitapTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
