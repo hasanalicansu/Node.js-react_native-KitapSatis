@@ -13,7 +13,7 @@ import {
 import RBSheet from 'react-native-raw-bottom-sheet';
 import ImagePicker from 'react-native-image-crop-picker';
 import ContentCreationillustration from './ContentCreationillustration';
-import {UpdateProduct} from '../redux/actions';
+import {UpdateProduct, DownloadFirstPhoto} from '../redux/actions';
 import {connect} from 'react-redux';
 import {PacmanIndicator} from 'react-native-indicators';
 import localData from '../localJson/universityData.json';
@@ -23,17 +23,27 @@ import localData from '../localJson/universityData.json';
 class EditProduct extends Component {
   state = {
     university: this.props.route.params.data.university,
+    universityId: this.props.route.params.data.universityId,
 
     photo: '',
     photo2: '',
     photo3: '',
+
     illustration: 1,
     title: this.props.route.params.data.productTitle,
     detail: this.props.route.params.data.productDetail,
     author: this.props.route.params.data.author,
     price: this.props.route.params.data.productPrice,
     name: 'name',
+
+    photoArray: [],
   };
+  async componentDidMount() {
+    this.props.DownloadFirstPhoto(
+      this.props.route.params.data._id,
+      this.props.route.params.data.productPhoto,
+    );
+  }
 
   update() {
     this.props.UpdateProduct(
@@ -44,6 +54,7 @@ class EditProduct extends Component {
       this.state.detail,
       Number(this.state.price),
       this.state.university,
+      this.state.universityId,
       true,
     );
   }
@@ -79,134 +90,6 @@ class EditProduct extends Component {
         </View>
 
         <ScrollView>
-          <View style={{marginBottom: 30, marginTop: 20}}>
-            <View style={{marginLeft: 40, marginBottom: 15}}>
-              <Text
-                style={{
-                  fontFamily: 'AvenirNext-DemiBold',
-                  fontSize: 20,
-                  color: '#D13841',
-                }}>
-                Fotoğraf
-              </Text>
-            </View>
-            <View
-              style={{flexDirection: 'row', justifyContent: 'space-around'}}>
-              <TouchableOpacity
-                onPress={() => {
-                  ImagePicker.openPicker({
-                    width: 300,
-                    height: 400,
-                    cropping: true,
-                  }).then((image) => {
-                    console.log(image, 'burası');
-                    this.setState({photo: image});
-                  });
-                }}>
-                <View
-                  style={{
-                    width: 90,
-                    height: 120,
-                    backgroundColor: '#E5E5E5',
-                    justifyContent: 'center',
-                    borderRadius: 13,
-                  }}>
-                  {this.state.photo == '' ? (
-                    <Text
-                      style={{
-                        alignSelf: 'center',
-                        fontSize: 18,
-                        textAlign: 'center',
-                        fontFamily: 'AvenirNext-DemiBold',
-                        color: '#777777',
-                      }}>
-                      Fotoğraf ekle
-                    </Text>
-                  ) : (
-                    <Image
-                      style={{width: 90, height: 120, borderRadius: 13}}
-                      source={{uri: this.state.photo.sourceURL}}></Image>
-                  )}
-                </View>
-              </TouchableOpacity>
-              <TouchableOpacity
-                onPress={() => {
-                  ImagePicker.openPicker({
-                    width: 300,
-                    height: 400,
-                    cropping: true,
-                  }).then((image) => {
-                    console.log(image, 'burası');
-                    this.setState({photo2: image});
-                  });
-                }}>
-                <View
-                  style={{
-                    width: 90,
-                    height: 120,
-                    backgroundColor: '#E5E5E5',
-                    justifyContent: 'center',
-                    borderRadius: 13,
-                  }}>
-                  {this.state.photo2 == '' ? (
-                    <Text
-                      style={{
-                        alignSelf: 'center',
-                        fontSize: 18,
-                        textAlign: 'center',
-                        fontFamily: 'AvenirNext-DemiBold',
-                        color: '#777777',
-                      }}>
-                      Fotoğraf ekle
-                    </Text>
-                  ) : (
-                    <Image
-                      style={{width: 90, height: 120, borderRadius: 13}}
-                      source={{uri: this.state.photo2.sourceURL}}></Image>
-                  )}
-                </View>
-              </TouchableOpacity>
-
-              <TouchableOpacity
-                onPress={() => {
-                  ImagePicker.openPicker({
-                    width: 300,
-                    height: 400,
-                    cropping: true,
-                  }).then((image) => {
-                    console.log(image, 'burası');
-                    this.setState({photo3: image});
-                  });
-                }}>
-                <View
-                  style={{
-                    width: 90,
-                    height: 120,
-                    backgroundColor: '#E5E5E5',
-                    justifyContent: 'center',
-                    borderRadius: 13,
-                  }}>
-                  {this.state.photo3 == '' ? (
-                    <Text
-                      style={{
-                        alignSelf: 'center',
-                        fontSize: 18,
-                        textAlign: 'center',
-                        fontFamily: 'AvenirNext-DemiBold',
-                        color: '#777777',
-                      }}>
-                      Fotoğraf ekle
-                    </Text>
-                  ) : (
-                    <Image
-                      style={{width: 90, height: 120, borderRadius: 13}}
-                      source={{uri: this.state.photo3.sourceURL}}></Image>
-                  )}
-                </View>
-              </TouchableOpacity>
-            </View>
-          </View>
-
           <View
             style={{
               flexDirection: 'column',
@@ -384,7 +267,7 @@ class EditProduct extends Component {
               ref={(ref) => {
                 this.RBSheetUniversity = ref;
               }}
-              height={800}
+              height={height * 0.85}
               openDuration={300}
               animationType={'fade'}
               closeOnDragDown={true}
@@ -414,7 +297,10 @@ class EditProduct extends Component {
                           <TouchableOpacity
                             style={{marginTop: 7}}
                             onPress={() => {
-                              this.setState({university: x.name});
+                              this.setState({
+                                university: x.name,
+                                universityId: x.uid,
+                              });
                               this.RBSheetUniversity.close();
                             }}>
                             <Text
@@ -471,9 +357,13 @@ class EditProduct extends Component {
     );
   }
 }
-const mapStateToProps = ({productUpdateResponse}) => {
+const mapStateToProps = ({productUpdateResponse, getImageResponse}) => {
   const loading = productUpdateResponse.loading;
-  console.log(loading, 'loaddd edit');
-  return {loading};
+  const images = getImageResponse.data;
+  const loadingImage = getImageResponse.loading;
+  
+  return {loading, images, loadingImage};
 };
-export default connect(mapStateToProps, {UpdateProduct})(EditProduct);
+export default connect(mapStateToProps, {UpdateProduct, DownloadFirstPhoto})(
+  EditProduct,
+);

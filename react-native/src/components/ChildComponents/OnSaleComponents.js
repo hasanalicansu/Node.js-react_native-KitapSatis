@@ -6,10 +6,12 @@ import {
   Image,
   TouchableOpacity,
   FlatList,
+  Dimensions
 } from 'react-native';
 
 import {connect} from 'react-redux';
-import {log} from 'react-native-reanimated';
+(width = Dimensions.get('window').width),
+  (height = Dimensions.get('window').height);
 import {
   DotIndicator,
   BallIndicator,
@@ -30,7 +32,7 @@ class OnSaleComponents extends Component {
 
   async componentDidMount() {
     const photoUrl = await downloadImage(this.props.data._id);
-    console.log(photoUrl);
+   
     this.setState({image: photoUrl});
   }
 
@@ -154,3 +156,5 @@ class OnSaleComponents extends Component {
 export default connect(null, {
  
 })(OnSaleComponents);
+
+

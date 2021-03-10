@@ -27,12 +27,12 @@ import {SearchProduct} from '../redux/actions';
 import {connect} from 'react-redux';
 
 class Search extends Component {
-  state = {title: '', universite: '', sıralama: 0};
+  state = {title: '', universite: '', sıralama: 0, universiteId: 0};
 
   search() {
     this.props.SearchProduct(
       this.state.title,
-      this.state.universite,
+      this.state.universiteId,
       this.state.sıralama,
     );
   }
@@ -121,9 +121,6 @@ class Search extends Component {
                 </Text>
               </TouchableOpacity>
 
-             
-
-
               <TouchableOpacity
                 onPress={() => {
                   this.RBSheetSort.open();
@@ -152,7 +149,7 @@ class Search extends Component {
               ref={(ref) => {
                 this.RBSheetUniversity = ref;
               }}
-              height={800}
+              height={height * 0.85}
               openDuration={300}
               animationType={'fade'}
               closeOnDragDown={true}
@@ -164,6 +161,21 @@ class Search extends Component {
                 },
               }}>
               <View style={{marginTop: 20}}>
+                <TouchableOpacity
+                  style={{alignSelf: 'center'}}
+                  onPress={() => {
+                    this.setState({universiteId: 0});
+                    this.RBSheetUniversity.close();
+                  }}>
+                  <Text
+                    style={{
+                      fontFamily: 'AvenirNext-DemiBold',
+                      fontSize: 30,
+                      color: '#C70039',
+                    }}>
+                    Sıfırla
+                  </Text>
+                </TouchableOpacity>
                 <FlatList
                   data={localData}
                   renderItem={({item}) => (
@@ -174,19 +186,19 @@ class Search extends Component {
                           fontSize: 20,
                           color: '#C70039',
                         }}>
-                         {item.id}-{item.province}
+                        {item.id}-{item.province}
                       </Text>
 
                       {item.universities.map((x) => {
                         return (
                           <TouchableOpacity
-                          style={{marginTop:7}}
+                            style={{marginTop: 7}}
                             onPress={() => {
-                              this.setState({universite:x.name})
+                              this.setState({universiteId: x.uid});
                               this.RBSheetUniversity.close();
                             }}>
                             <Text
-                            numberOfLines={1}
+                              numberOfLines={1}
                               style={{
                                 fontFamily: 'AvenirNext-DemiBold',
                                 fontSize: 20,
@@ -222,34 +234,59 @@ class Search extends Component {
               <View style={{marginTop: 20}}>
                 <TouchableOpacity
                   onPress={() => {
+                    this.setState({sıralama: -1});
                     this.RBSheetSort.close();
                   }}
                   style={{marginLeft: 20, marginBottom: 10}}>
-                  <Text
-                    style={{
-                      fontFamily: 'AvenirNext-DemiBold',
-                      fontSize: 20,
-                      color: '#656565',
-                    }}>
-                    Fiyata göre artan
-                  </Text>
+                  {this.state.sıralama == -1 ? (
+                    <Text
+                      style={{
+                        fontFamily: 'AvenirNext-DemiBold',
+                        fontSize: 20,
+                        color: 'red',
+                      }}>
+                      Fiyata göre artan
+                    </Text>
+                  ) : (
+                    <Text
+                      style={{
+                        fontFamily: 'AvenirNext-DemiBold',
+                        fontSize: 20,
+                        color: '#656565',
+                      }}>
+                      Fiyata göre artan
+                    </Text>
+                  )}
                 </TouchableOpacity>
                 <TouchableOpacity
                   onPress={() => {
+                    this.setState({sıralama: 1});
                     this.RBSheetSort.close();
                   }}
                   style={{marginLeft: 20, marginBottom: 10}}>
-                  <Text
-                    style={{
-                      fontFamily: 'AvenirNext-DemiBold',
-                      fontSize: 20,
-                      color: '#656565',
-                    }}>
-                    Fiyata göre azalan
-                  </Text>
+                  {this.state.sıralama == 1 ? (
+                    <Text
+                      style={{
+                        fontFamily: 'AvenirNext-DemiBold',
+                        fontSize: 20,
+                        color: 'red',
+                      }}>
+                      Fiyata göre azalan
+                    </Text>
+                  ) : (
+                    <Text
+                      style={{
+                        fontFamily: 'AvenirNext-DemiBold',
+                        fontSize: 20,
+                        color: '#656565',
+                      }}>
+                      Fiyata göre azalan
+                    </Text>
+                  )}
                 </TouchableOpacity>
                 <TouchableOpacity
                   onPress={() => {
+                    this.setState({sıralama: 0});
                     this.RBSheetSort.close();
                   }}
                   style={{marginLeft: 20, marginBottom: 10}}>
@@ -259,21 +296,7 @@ class Search extends Component {
                       fontSize: 20,
                       color: '#656565',
                     }}>
-                    En son eklenenler
-                  </Text>
-                </TouchableOpacity>
-                <TouchableOpacity
-                  onPress={() => {
-                    this.RBSheetSort.close();
-                  }}
-                  style={{marginLeft: 20, marginBottom: 10}}>
-                  <Text
-                    style={{
-                      fontFamily: 'AvenirNext-DemiBold',
-                      fontSize: 20,
-                      color: '#656565',
-                    }}>
-                    En eskiler
+                    Sıfırla
                   </Text>
                 </TouchableOpacity>
               </View>
@@ -288,20 +311,47 @@ class Search extends Component {
           </View>
         ) : (
           <View style={{marginTop: 30, flex: 1}}>
-            <FlatList
-              columnWrapperStyle={{
-                justifyContent: 'space-around',
-                marginBottom: 30,
-              }}
-              data={this.props.searchData}
-              renderItem={({item}) => (
-                <SearchComponents
-                  navi={this.props}
-                  data={item}></SearchComponents>
-              )}
-              keyExtractor={(item) => item._id}
-              numColumns={2}
-            />
+
+            
+
+            {this.props.searchData == 0 ? (
+              <View
+              style={{
+                alignItems: 'center',
+                justifyContent: 'center',
+                flex: 1,
+              }}>
+              <Image
+                style={{width: width * 0.8, height: width * 0.8}}
+                source={require('../assets/search_null.png')}></Image>
+              <View style={{marginHorizontal:width*0.1}}>
+                <Text
+                  style={{
+                    fontFamily: 'AvenirNext-DemiBold',
+                    fontSize: 20,
+                    color: '#626262',
+                    textAlign:"center"
+                  }}>
+                  Aradağınızı bulamadım. Yazarın ismini veya kitabın ismini yazarak tekrar deneyebilirsin
+                </Text>
+              </View>
+            </View>
+            ) : (
+              <FlatList
+                columnWrapperStyle={{
+                  justifyContent: 'space-around',
+                  marginBottom: 30,
+                }}
+                data={this.props.searchData}
+                renderItem={({item}) => (
+                  <SearchComponents
+                    navi={this.props}
+                    data={item}></SearchComponents>
+                )}
+                keyExtractor={(item) => item._id}
+                numColumns={2}
+              />
+            )}
           </View>
         )}
       </SafeAreaView>
@@ -312,7 +362,7 @@ class Search extends Component {
 const mapStateToProps = ({searchResponse}) => {
   const searchData = searchResponse.data;
   const loading = searchResponse.loading;
-  console.log(searchData, loading);
+ 
   return {searchData, loading};
 };
 export default connect(mapStateToProps, {

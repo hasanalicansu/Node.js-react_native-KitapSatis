@@ -16,7 +16,7 @@ import {
   PacmanIndicator,
   PulseIndicator,
   SkypeIndicator,
-  UIActivityIndicator
+  UIActivityIndicator,
 } from 'react-native-indicators';
 
 import {GetFavoriteProduct} from '../redux/actions';
@@ -24,12 +24,14 @@ import {connect} from 'react-redux';
 import FavoriteComponents from './FavoriteComponents';
 
 class Favorite extends Component {
-  state={
-    image:""
-  }
+  state = {
+    image: '',
+  };
 
-  async componentDidMount() {
-    await this.props.GetFavoriteProduct();
+  componentDidMount() {
+    this.props.navigation.addListener('focus', () => {
+      this.props.GetFavoriteProduct();
+    });
   }
 
   render() {
@@ -52,9 +54,10 @@ class Favorite extends Component {
           {this.props.loading ? (
             <PacmanIndicator></PacmanIndicator>
           ) : (
-            <View style={{
-              flex: 1,
-            }}>
+            <View
+              style={{
+                flex: 1,
+              }}>
               {!this.props.favoriteData ? (
                 <View
                   style={{
@@ -79,6 +82,7 @@ class Favorite extends Component {
               ) : (
                 <View style={{alignItems: 'center', flex: 1}}>
                   <FlatList
+                    showsVerticalScrollIndicator={false}
                     data={this.props.favoriteData}
                     renderItem={({item}) => (
                       <TouchableOpacity
@@ -87,9 +91,7 @@ class Favorite extends Component {
                             data: item,
                           })
                         }>
-                          <FavoriteComponents data={item}></FavoriteComponents>
-                        
-                     
+                        <FavoriteComponents data={item}></FavoriteComponents>
                       </TouchableOpacity>
                     )}
                     keyExtractor={(item) => item._id}
@@ -107,9 +109,9 @@ class Favorite extends Component {
 const mapStateToProps = ({favoriteResponse}) => {
   const favoriteData = favoriteResponse.data;
   const loading = favoriteResponse.loading;
-  
-  return {favoriteData,loading};
+
+  return {favoriteData, loading};
 };
 export default connect(mapStateToProps, {
-  GetFavoriteProduct
+  GetFavoriteProduct,
 })(Favorite);

@@ -17,7 +17,7 @@ class OnSale extends Component {
   }
   render() {
     return (
-      <SafeAreaView style={{flex: 1}}>
+      <SafeAreaView style={{flex: 1,backgroundColor:"#FAFAFA"}}>
         <View style={{flexDirection: 'column', marginTop: 5, flex: 1}}>
           <View style={{flexDirection: 'row', alignItems: 'center'}}>
             <TouchableOpacity
@@ -93,31 +93,7 @@ class OnSale extends Component {
 
 const mapStateToProps = ({getMineProductResponse}) => {
   const onSaleData = getMineProductResponse;
-  console.log(onSaleData);
+ 
   return {onSaleData};
 };
 export default connect(mapStateToProps, {GetOwnProductOnSale})(OnSale);
-/*
-
-
-<View
-              style={{
-                alignItems: 'center',
-                justifyContent: 'center',
-                flex: 1,
-              }}>
-              <Image
-                style={{width: width * 0.7, height: width * 0.7}}
-                source={require('../assets/MoneyJar_Isometric.png')}></Image>
-              <View>
-                <Text
-                  style={{
-                    fontFamily: 'AvenirNext-DemiBold',
-                    fontSize: 20,
-                    color: '#626262',
-                  }}>
-                  Haydi birkaç kitap satalım
-                </Text>
-              </View>
-            </View>
-*/

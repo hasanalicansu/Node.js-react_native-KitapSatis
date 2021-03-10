@@ -24,8 +24,8 @@ Content-Type: application/json
 {
     "name":"harun",
     "surname":"cansu",
-    "email" : "harun@test.com",
-    
+    "email" : "ounoyna@gmail.com",
+  
     "sifre" : "123456"
 }
 
@@ -37,6 +37,16 @@ Content-Type: application/json
 {
     "email" : "sami@test.com",
     "sifre" : "123456"
+}
+
+
+//şifremi unuttum
+###
+POST {{BASE_URL}}/users/forgetPassword
+Content-Type: application/json
+
+{
+    "email" : "hasanalicansu@gmail.com"
 }
 
 //token giriş

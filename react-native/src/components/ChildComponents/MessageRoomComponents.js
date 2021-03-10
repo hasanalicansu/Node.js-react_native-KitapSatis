@@ -22,7 +22,7 @@ export default class MessageRoomComponents extends Component {
   };
   async componentDidMount() {
     socket = io('http://localhost:80');
-    console.log(this.props.data._id);
+    
     socket.emit('GetProductDetail', {Id: this.props.data.productId});
     socket.on('SendProductDetail', async (data) => {
       this.setState({
@@ -40,6 +40,10 @@ export default class MessageRoomComponents extends Component {
         onPress={() =>
           this.props.navi.navigation.navigate('MessageContent', {
             roomId: this.props.data._id,
+            phtourl: this.state.url,
+            title: this.state.title,
+            university: this.state.university,
+            productId: this.props.data.productId,
           })
         }>
         <View

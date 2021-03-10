@@ -27,12 +27,14 @@ import PeoductCreater from '../components/PeoductCreater';
 import Settings from '../components/Settings';
 import AvatarSettings from '../components/AvatarSettings';
 import OnboardingComponents from '../components/OnboardingComponents';
+import ForgetPassword from '../components/Login/ForgetPassword';
 function TabBar() {
   return (
     <Tab.Navigator
       tabBarOptions={{
         style: {
           backgroundColor: '#5A1BEE',
+          
         },
       }}>
       <Tab.Screen
@@ -126,6 +128,7 @@ const RooterComponent = () => {
        <Stack.Screen name="OnboardingComponents" component={OnboardingComponents} />
         <Stack.Screen name="LoginPage" component={LoginPage} />
         <Stack.Screen name="RegisterPage" component={RegisterPage} />
+        <Stack.Screen name="ForgetPassword" component={ForgetPassword} />
         <Stack.Screen name="LoggedIn" component={LoggedIn} />
 
       </Stack.Navigator>
@@ -144,6 +147,7 @@ function LoggedIn() {
         <Stack.Screen name="TabBar" component={TabBar} />
         
         <Stack.Screen name="Settings" component={Settings} />
+        
         <Stack.Screen name="AvatarSettings" component={AvatarSettings} />
         <Stack.Screen name="PeoductCreater" component={PeoductCreater} />
         <Stack.Screen name="Search" component={Search} />

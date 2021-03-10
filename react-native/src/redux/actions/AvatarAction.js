@@ -7,7 +7,7 @@ import Toast from 'react-native-simple-toast';
 
 import RNFetchBlob from 'react-native-fetch-blob';
 import {app} from '../../firebase';
-import {log} from 'react-native-reanimated';
+
 const Blob = RNFetchBlob.polyfill.Blob;
 const fs = RNFetchBlob.fs;
 window.XMLHttpRequest = RNFetchBlob.polyfill.XMLHttpRequest;
@@ -16,14 +16,37 @@ window.Blob = Blob;
 export const NewProfilePhoto = (profilePhoto) => {
   return async (dispatch) => {
     try {
-      const userToken = await AsyncStorage.getItem('idKitapHAC');
+      const userId = await AsyncStorage.getItem('idKitapHAC');
+      const userToken = await AsyncStorage.getItem('tokenKitapHAC');
       dispatch({type: AVATAR_USER});
-      await uploadImage(profilePhoto, userToken);
+      const res = await uploadImage(profilePhoto, userId);
+     
+      if (res.durum == true) {
+       
+        const resPhoto = await axios.patch(
+          'http://localhost:3000/api/users/updateAvatar',
+          {
+            url: res.photoUrl,
+          },
+          {
+            headers: {
+              'Content-type': 'application/json',
+              Authorization: 'Bearer ' + userToken,
+            },
+          },
+        );
 
-      dispatch({type: AVATAR_USER_SUCCESS});
-      toastAlert('Profil fotoğrafı değiştirildi');
-
-      RooterNavigation.pop();
+       
+        if (resPhoto.status == 200) {
+          await AsyncStorage.setItem("avatarHAC", res.photoUrl);
+          dispatch({type: AVATAR_USER_SUCCESS});
+          toastAlert('Profil fotoğrafı değiştirildi');
+        } else {
+          toastAlert('Hata oluştu');
+          dispatch({type: AVATAR_USER_FAIL});
+        }
+        RooterNavigation.pop();
+      }
     } catch (error) {
       toastAlert('Hata oluştu');
       dispatch({type: AVATAR_USER_FAIL});
@@ -37,12 +60,9 @@ async function uploadImage(image, id) {
     let uploadBlob = null;
     const uploadUri =
       Platform.OS === 'ios' ? imgUri.replace('file://', '') : imgUri;
-    console.log(uploadUri, Platform.OS);
+   
 
-    const imageRef = app
-      .storage()
-      .ref('avatar/')
-      .child(id);
+    const imageRef = app.storage().ref('avatar/').child(id);
 
     fs.readFile(uploadUri, 'base64')
       .then((data) => {
@@ -60,18 +80,16 @@ async function uploadImage(image, id) {
         return imageRef.getDownloadURL();
       })
       .then((url) => {
-        console.log(url);
-        resolve(url);
+       
+        resolve({durum: true, photoUrl: url});
       })
       .catch((error) => {
-        reject(error);
+        console.log(error);
+        reject(false);
       });
   });
 }
 
-
-
 function toastAlert(dataString) {
-    Toast.showWithGravity(dataString, Toast.SHORT, Toast.TOP);
-  }
-  
+  Toast.showWithGravity(dataString, Toast.SHORT, Toast.TOP);
+}

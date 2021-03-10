@@ -12,22 +12,21 @@ import {
 import MessageRoomComponents from './ChildComponents/MessageRoomComponents';
 import AsyncStorage from '@react-native-community/async-storage';
 (width = Dimensions.get('window').width),
-(height = Dimensions.get('window').height);
+  (height = Dimensions.get('window').height);
 dataa = [1, 2];
-import {socket} from "../functions/SocketIo";
-
-
+import {socket} from '../functions/SocketIo';
 
 export default class MessageRoom extends Component {
-  state={roomData:[]}
+  state = {roomData: []};
   async componentDidMount() {
     const userId = await AsyncStorage.getItem('idKitapHAC');
-    socket.emit('GetMessageRoom',{userId:userId});
-    socket.on("SendMessageRoom",(data)=>{
-      //console.log("room",data);
-      this.state.roomData=data;
-      this.setState({roomData:data})
-    })
+    socket.emit('GetMessageRoom', {userId: userId});
+    socket.on('SendMessageRoom', (data) => {
+      this.state.roomData = data;
+      this.setState({roomData: data});
+     
+    });
+    
   }
 
   render() {
@@ -47,13 +46,15 @@ export default class MessageRoom extends Component {
               Mesajlar
             </Text>
           </View>
-          <View style={{marginTop: 20,flex:1}}>
+          <View style={{marginTop: 20, flex: 1}}>
             <FlatList
-            bounces={false}
+              bounces={false}
               data={this.state.roomData.data}
-              renderItem={({item}) => (<View>
-                
-                <MessageRoomComponents navi={this.props} data={item}></MessageRoomComponents>
+              renderItem={({item}) => (
+                <View>
+                  <MessageRoomComponents
+                    navi={this.props}
+                    data={item}></MessageRoomComponents>
                 </View>
               )}
               keyExtractor={(item) => item._id}

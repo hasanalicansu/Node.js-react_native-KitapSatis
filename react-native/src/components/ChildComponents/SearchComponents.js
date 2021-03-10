@@ -8,16 +8,38 @@ import {
   TextInput,
   Dimensions,
 } from 'react-native';
+import {
+  DotIndicator,
+  BallIndicator,
+  WaveIndicator,
+  MaterialIndicator,
+  PacmanIndicator,
+  PulseIndicator,
+  SkypeIndicator,
+  UIActivityIndicator,
+} from 'react-native-indicators';
+
+import {PlusCounterProduct} from '../../redux/actions';
+import {connect} from 'react-redux';
 (width = Dimensions.get('window').width),
   (height = Dimensions.get('window').height);
-export default class SearchComponents extends Component {
+  import {downloadImage} from "../../functions/downloadFunctions";
+ class SearchComponents extends Component {
+  state = {
+    image: '',
+  };
+
+  async componentDidMount() {
+    const photoUrl = await downloadImage(this.props.data._id);
+   
+    this.setState({image: photoUrl});
+  }
   render() {
     return (
       <TouchableOpacity
         onPress={() => {
-          this.props.navi.navigation.navigate('ProductDetail', {
-            data: this.props.data,
-          });
+          this.props.PlusCounterProduct(this.props.data._id)
+          
         }}
         style={{
           flexDirection: 'column',
@@ -29,10 +51,28 @@ export default class SearchComponents extends Component {
         }}>
         <View style={{flexDirection: 'row', justifyContent: 'space-around'}}>
           <View style={{width:width*0.2,backgroundColor:"",alignItems:"center"}}>
-            <Image
-              source={require('../../assets/dan_brown.jpg')}
-              style={{width: 60, height: 100}}
-            />
+
+          {this.state.image == '' ? (
+              <View
+                style={{
+                  width: 60,
+                  height: 100,
+                  marginLeft: 5,
+                  justifyContent: 'center',
+                  alignItems: 'center',
+                }}>
+                <MaterialIndicator color={"#B03B3B"}></MaterialIndicator>
+              </View>
+            ) : (
+              <Image
+                style={{
+                  width: 60,
+                  height: 100,
+                  marginLeft: 5,
+                }}
+                source={{uri: this.state.image}}
+              />
+            )}
           </View>
 
           <View
@@ -72,7 +112,7 @@ export default class SearchComponents extends Component {
                 numberOfLines={2}
                 style={{
                   fontFamily: 'AvenirNext-DemiBold',
-                  fontSize: 16,
+                  fontSize: 16,textAlign:"center"
                 }}>
                 {this.props.data.productTitle}
               </Text>
@@ -81,9 +121,18 @@ export default class SearchComponents extends Component {
               style={{
                 fontFamily: 'Avenir-Medium',
                 fontSize: 16,
-                color: '#626262',
+                color: '#626262',textAlign:"center"
               }}>
               {this.props.data.author}
+            </Text>
+            <Text
+              numberOfLines={2}
+              style={{
+                fontFamily: 'Avenir-Medium',
+                fontSize: 16,
+                color: '#626262',textAlign:"center"
+              }}>
+              {this.props.data.university}
             </Text>
             </View>
             
@@ -93,3 +142,9 @@ export default class SearchComponents extends Component {
     );
   }
 }
+
+
+export default connect(null, {
+  
+  PlusCounterProduct
+})(SearchComponents);

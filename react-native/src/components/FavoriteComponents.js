@@ -33,7 +33,7 @@ class FavoriteComponents extends Component {
 
   async componentDidMount() {
     const photoUrl = await downloadImage(this.props.data._id);
-    console.log(photoUrl);
+ 
     this.setState({image: photoUrl});
   }
 
@@ -42,13 +42,13 @@ class FavoriteComponents extends Component {
       <View
         style={{
           width: width * 0.9,
-          backgroundColor: '#FF9A9A',
+          
           height: 220,
-          borderRadius: 5,
+          
           justifyContent: 'center',
           marginTop: 20,
 
-          opacity: 0.83,
+          opacity: 1,
         }}>
         <View
           style={{
@@ -143,6 +143,7 @@ class FavoriteComponents extends Component {
                   fontSize: 18,
                   fontFamily: 'AvenirNext-DemiBold',
                   textAlign: 'center',
+                  color:"#FAFAFA"
                 }}>
                 Kaldır
               </Text>

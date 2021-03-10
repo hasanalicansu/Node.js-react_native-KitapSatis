@@ -10,43 +10,48 @@ import {
 
 (width = Dimensions.get('window').width),
   (height = Dimensions.get('window').height);
-
-export default class Department extends Component {
+import AsyncStorage from '@react-native-community/async-storage';
+import {SearchProduct} from '../../redux/actions';
+import {connect} from 'react-redux';
+class Department extends Component {
+  state = {
+    universite: '',
+    universiteId: 0,
+  };
+  async componentDidMount() {
+    const userUni = await AsyncStorage.getItem('uniKitapHAC');
+    const userUniId = await AsyncStorage.getItem('uniIdKitapHAC');
+    
+    this.setState({universite: userUni, universiteId: userUniId});
+  }
   render() {
     return (
-      <View style={{flexDirection: 'column',marginTop:20}}>
-        <View>
-          <Text
-            style={{
-              fontFamily: 'Avenir-Black',
-              fontSize: 23,
-              color: '#000000',
-            }}>
-            {' '}
-            Üniversitem
-          </Text>
-        </View>
-        <TouchableOpacity>
+      <View style={{flexDirection: 'column'}}>
+        <TouchableOpacity
+          onPress={() => {
+            this.props.SearchProduct('', this.state.universiteId, 0);
+            this.props.navi.navigation.navigate('Search');
+          }}>
           <View
             style={{
-              width: width*0.9,
-              backgroundColor: '#FACD5C',
-              height: 70,
-              borderRadius: 7,
+              width: width * 0.7,
+              backgroundColor: '#6C3483',//FACD5C
+              height: 50,
+              borderRadius: 5,
               justifyContent: 'center',
-              marginTop: 20,
               
             }}>
             <Text
-            numberOfLines={1}
+              numberOfLines={1}
               style={{
-                fontSize: 22,
+                fontSize: 20,
                 textAlign: 'center',
-                fontFamily: 'Avenir-Heavy',
-                color: '#6B4DAD',
-                opacity: 1,
+                fontFamily: 'Avenir-Black',
+                color: '#FACD5C',//6B4DAD FACD5C
+                
+                marginHorizontal: 20,
               }}>
-              Sakarya Üniversitesi
+              {this.state.universite}
             </Text>
           </View>
         </TouchableOpacity>
@@ -55,7 +60,9 @@ export default class Department extends Component {
   }
 }
 
-
+export default connect(null, {
+  SearchProduct,
+})(Department);
 
 /*    <View style={{flexDirection: 'column'}}>
         <View>

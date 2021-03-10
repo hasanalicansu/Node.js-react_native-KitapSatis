@@ -138,7 +138,8 @@ class LoginPage extends Component {
                   </View>
                 )}
                 <View style={{alignItems: 'center', marginTop: 13}}>
-                  <TouchableOpacity>
+                  <TouchableOpacity
+                  onPress={()=>{this.props.navigation.navigate("ForgetPassword")}}>
                     <Text
                       style={{
                         color: '#A49ABB',
@@ -196,7 +197,7 @@ class LoginPage extends Component {
 
 const mapStateToProps = ({loginResponse, tokenLoginResponse}) => {
   const tokenLoading = tokenLoginResponse.loading;
-  console.log(tokenLoading);
+  
   const loading = loginResponse.loading;
   return {loading, tokenLoading};
 };

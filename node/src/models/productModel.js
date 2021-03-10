@@ -38,7 +38,10 @@ const ProductSchema = new Schema({
   university: {
     type:String,
     required: [true, "Üniversite boş olamaz"],
-    
+  },
+  universityId: {
+    type:Number,
+    default:0
   },
   counter:{
     type:Number,

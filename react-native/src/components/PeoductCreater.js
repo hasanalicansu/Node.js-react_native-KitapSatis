@@ -22,13 +22,15 @@ import localData from '../localJson/universityData.json';
 
 class PeoductCreater extends Component {
   state = {
-    university: 'İstanbul Teknik Üniversitesi',
+    university: 'SAKARYA ÜNİVERSİTESİ',
+    universityId: 176,
     illustration: 0,
     title: '',
     detail: '',
     author: '',
     price: 0,
     photoArray: [],
+
   };
 
   async create() {
@@ -38,6 +40,7 @@ class PeoductCreater extends Component {
       this.state.detail,
       Number(this.state.price),
       this.state.university,
+      this.state.universityId,
       this.state.photoArray,
     );
   }
@@ -82,7 +85,7 @@ class PeoductCreater extends Component {
                 }).then((image) => {
                   this.state.photoArray[0] = image;
                   this.setState({photoArray: this.state.photoArray});
-                  console.log(this.state.photoArray, 'push');
+                 
                 });
               }}>
               <View
@@ -118,11 +121,10 @@ class PeoductCreater extends Component {
                   height: 400,
                   cropping: true,
                 }).then((image) => {
-                  console.log(image, 'burası');
+                
                   this.state.photoArray[1] = image;
                   this.setState({photoArray: this.state.photoArray});
-                  console.log(this.state.photoArray, 'push');
-                  //this.setState({photo2: image});
+                
                 });
               }}>
               <View
@@ -159,11 +161,10 @@ class PeoductCreater extends Component {
                   height: 400,
                   cropping: true,
                 }).then((image) => {
-                  console.log(image, 'burası');
+                 
                   this.state.photoArray[2] = image;
                   this.setState({photoArray: this.state.photoArray});
-                  console.log(this.state.photoArray, 'push');
-                  //this.setState({photo3: image});
+                 
                 });
               }}>
               <View
@@ -368,7 +369,7 @@ class PeoductCreater extends Component {
             ref={(ref) => {
               this.RBSheetUniversity = ref;
             }}
-            height={800}
+            height={height*0.85}
             openDuration={300}
             animationType={'fade'}
             closeOnDragDown={true}
@@ -398,7 +399,7 @@ class PeoductCreater extends Component {
                         <TouchableOpacity
                           style={{marginTop: 7}}
                           onPress={() => {
-                            this.setState({university: x.name});
+                            this.setState({university: x.name,universityId:x.uid});
                             this.RBSheetUniversity.close();
                           }}>
                           <Text

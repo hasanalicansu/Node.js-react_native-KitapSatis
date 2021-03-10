@@ -6,6 +6,10 @@ export const LOGOUT_USER_SUCCESS="logout_user_success";
 export const LOGOUT_USER="logout_user";
 export const LOGOUT_USER_FAIL="logout_user_fail";
 
+export const FORGET_USER_SUCCESS="forget_user_success";
+export const FORGET_USER="forget_user";
+export const FORGET_USER_FAIL="forget_user_fail";
+
 export const AVATAR_USER_SUCCESS="avatar_user_success";
 export const AVATAR_USER="avatar_user";
 export const AVATAR_USER_FAIL="avatar_user_fail";

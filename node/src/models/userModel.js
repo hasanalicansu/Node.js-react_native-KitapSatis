@@ -25,6 +25,10 @@ const UserSchema = new Schema(
       type: String,
       required: [true, "üniversite boş olamaz"],
     },
+    userUniversityId: {
+      type: Number,
+      efault:0
+    },
     email: {
       type: String,
       required: true,
@@ -40,7 +44,7 @@ const UserSchema = new Schema(
     },
     avatar: {
         type: String,
-        default:'default.png' 
+        default:'https://firebasestorage.googleapis.com/v0/b/kitap-df6cb.appspot.com/o/avatar%2Fuser-2.png?alt=media&token=0a18fb90-022e-4c04-9dfc-1d513de2fa50' 
     },
     emailActive: {
         type: Boolean,
@@ -70,6 +74,7 @@ const schema = Joi.object({
   userUniversity: Joi.string().messages({
     "string.empty": "Üniversite boş olamaz!!",
   }),
+  userUniversityId: Joi.number()
   
 });
 
@@ -84,7 +89,7 @@ UserSchema.methods.generateToken = async function () {
 //yeni bir user için bu validation kullanılır
 UserSchema.methods.joiValidation = function (userObject) {
   schema.required();
-  //console.log("BURADA", schema.validate(userObject));
+ 
   return schema.validate(userObject, { abortEarly: false });
 };
 

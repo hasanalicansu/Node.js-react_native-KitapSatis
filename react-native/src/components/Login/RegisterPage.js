@@ -35,11 +35,12 @@ class RegisterPage extends Component {
     email: '',
     password: '',
     userUniversity: 'SAKARYA ÜNİVERSİTESİ',
+    userUniversityId:176
   };
 
   register() {
-    const {name, surname, email, password, userUniversity} = this.state;
-    this.props.RegisterUser({name, surname, email, password, userUniversity});
+    const {name, surname, email, password, userUniversity,userUniversityId} = this.state;
+    this.props.RegisterUser({name, surname, email, password, userUniversity,userUniversityId});
   }
 
   render() {
@@ -190,7 +191,7 @@ class RegisterPage extends Component {
           ref={(ref) => {
             this.RBSheetUniversity = ref;
           }}
-          height={800}
+          height={height*0.85}
           openDuration={300}
           animationType={'fade'}
           closeOnDragDown={true}
@@ -220,7 +221,7 @@ class RegisterPage extends Component {
                       <TouchableOpacity
                         style={{marginTop: 7}}
                         onPress={() => {
-                          this.setState({userUniversity: x.name});
+                          this.setState({userUniversity: x.name,userUniversityId:x.uid});
                           this.RBSheetUniversity.close();
                         }}>
                         <Text

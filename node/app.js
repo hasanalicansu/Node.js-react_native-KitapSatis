@@ -8,11 +8,30 @@ const userRouter = require("./src/routers/userRouter");
 const productRouter = require("./src/routers/productRouter");
 const favoriteRouter = require("./src/routers/favoriteRouter");
 
+
+//template engine ayarları
+const ejs = require('ejs');
+const expressLayouts = require('express-ejs-layouts');
+const path = require('path');
+app.use(expressLayouts);
+app.use(express.static('public'));
+app.use("/uploads", express.static(path.join(__dirname,'/src/uploads')));
+app.set('view engine', 'ejs');
+app.set('views', path.resolve(__dirname, './src/views'));
+
+
+//formdan gelen değerlerin okunabilmesi için
+app.use(express.urlencoded({ extended: true }));
+
+
+//--------------
 app.use(express.json());
 
 app.use("/api/users", userRouter);
 app.use("/api/product", productRouter);
 app.use("/api/favorite", favoriteRouter);
+
+
 
 app.listen(process.env.PORT, () => {
   console.log("BAŞLADIK HAYIRLISIYLA PORT:", process.env.PORT);
@@ -27,7 +46,7 @@ const {
 
 
 io.on("connection", (socket) => {
-  console.log(socket.id, "hiiii");
+  console.log(socket.id, "socket başladı");
 
   socket.on("NewMessageRoom", async (data) => {
    

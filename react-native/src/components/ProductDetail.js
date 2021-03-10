@@ -15,6 +15,7 @@ import {
   AddFavoriteProduct,
   DownloadFirstPhoto,
 } from '../redux/actions';
+
 import {connect} from 'react-redux';
 import {socket} from '../functions/SocketIo';
 (width = Dimensions.get('window').width),
@@ -31,9 +32,14 @@ class ProductDetail extends Component {
       this.props.route.params.data.productPhoto,
     );
     socket.on('SendRoomId', (data) => {
-      console.log('detail', data.data._id);
+     
       this.props.navigation.navigate('MessageContent', {
         roomId: data.data._id,
+        
+        phtourl: this.props.images[0].image,
+        title: this.props.route.params.data.productTitle,
+        university: this.props.route.params.data.university,
+        productId: this.props.route.params.data._id,
       });
     });
   }
@@ -45,6 +51,7 @@ class ProductDetail extends Component {
       productId: this.props.route.params.data._id,
     });
   }
+
   render() {
     return (
       <SafeAreaView style={{flex: 1, backgroundColor: '#FFFFFF'}}>
@@ -79,8 +86,8 @@ class ProductDetail extends Component {
           ) : (
             <FlatListSlider
               data={this.props.images}
-              height={240}
-              width={200}
+              height={width * 0.6}
+              width={width * 0.5}
               onPress={(item) => {
                 null;
               }}
@@ -146,12 +153,17 @@ class ProductDetail extends Component {
                 });
               }}
               style={{flexDirection: 'row', marginTop: 30}}>
-              <View>
+              <View style={{}}>
                 <Image
-                  source={require('../assets/adam.jpg')}
+                  source={{uri: this.props.ownerData.avatar}}
                   style={{width: 65, height: 72, borderRadius: 20}}></Image>
               </View>
-              <View style={{flexDirection: 'column', marginLeft: 10}}>
+              <View
+                style={{
+                  flexDirection: 'column',
+                  marginLeft: 10,
+                  width: width * 0.7,
+                }}>
                 <View>
                   <Text
                     style={{fontFamily: 'AvenirNext-DemiBold', fontSize: 20}}>
@@ -160,12 +172,13 @@ class ProductDetail extends Component {
                 </View>
                 <View>
                   <Text
+                    numberOfLines={1}
                     style={{
                       fontFamily: 'Avenir-Medium',
                       fontSize: 17,
                       color: '#626262',
                     }}>
-                    Sakarya Üniversitesi
+                    {this.props.ownerData.userUniversity}
                   </Text>
                 </View>
               </View>
@@ -221,7 +234,7 @@ class ProductDetail extends Component {
 const mapStateToProps = ({getProductDataResponse, getImageResponse}) => {
   const ownerData = getProductDataResponse;
   const images = getImageResponse.data;
-  console.log(images, 'compooo');
+ 
   const loading = getImageResponse.loading;
   return {ownerData, images, loading};
 };

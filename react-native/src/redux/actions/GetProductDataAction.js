@@ -23,25 +23,24 @@ export const GetVisitorSaleProduct =  (id) => {
   return async (dispatch) => {
    try {
     const userToken = await AsyncStorage.getItem('tokenKitapHAC');
-    console.log("girdi");
+   
     const res = await axios.get('http://localhost:3000/api/product/GetVisitorProduct/'+id, {
       headers: {
         Authorization: "Bearer "+userToken,
       },
     });
-    console.log(res,"hako");
-    console.log(res.data,"hasalica");
+   
     
     dispatch({type: GET_PRODUCT_SALE_VISITOR, payload: res.data})
    } catch (error) {
-    console.log("hata");
+  
     console.log(error);
    }
   };
 };
 
 
-export const PlusCounterProduct =  (id,data) => {
+export const PlusCounterProduct =  (id) => {
   return  async() => {
     const userToken = await AsyncStorage.getItem('tokenKitapHAC');
     const res=await axios.get('http://localhost:3000/api/product/plusCounterProduct/'+id, {
@@ -49,10 +48,11 @@ export const PlusCounterProduct =  (id,data) => {
         Authorization: "Bearer "+userToken,
       },
     });
-    console.log(res.status);
+    
     if (res.status==200) {
+   
       RooterNavigation.navigate('ProductDetail', {
-        data: data,
+        data: res.data,
       });
     }
   };

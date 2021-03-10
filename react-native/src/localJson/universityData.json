@@ -10,7 +10,7 @@
         "website": "http://www.adanabtu.edu.tr",
         "email": "rektorluk@adanabtu.edu.tr",
         "adress": "Gültepe Mahallesi, Çatalan Caddesi No:201/5 01250 Sarıçam/ADANA",
-        "rector": "MEHMET TÜMAY"
+        "uid": 1
       },
       {
         "name": "ÇUKUROVA ÜNİVERSİTESİ",
@@ -19,7 +19,7 @@
         "website": "www.cu.edu.tr",
         "email": "genel-sekreter@cu.edu.tr",
         "adress": "Çukurova Üniversitesi Rektörlüğü 01330 Balcalı, Sarıçam / ADANA",
-        "rector": "MUSTAFA KİBAR"
+        "uid": 2
       }
     ]
   },
@@ -34,7 +34,7 @@
         "website": "http://www.adiyaman.edu.tr/",
         "email": "bidb@adiyaman.edu.tr",
         "adress": "Altınşehir Mh. 3005 Sokak No:13 02040 / ADIYAMAN",
-        "rector": "MUSTAFA TALHA GÖNÜLLÜ"
+        "uid": 3
       }
     ]
   },
@@ -49,7 +49,7 @@
         "website": "http://www.aku.edu.tr",
         "email": "ozkalem@aku.edu.tr",
         "adress": "Afyon Kocatepe Üniversitesi Rektörlüğü ANS Kampusü Gazlıgöl Yolu Üzeri",
-        "rector": "MUSTAFA SOLAK"
+        "uid": 4
       },
       {
         "name": "AFYONKARAHİSAR SAĞLIK BİLİMLERİ ÜNİVERSİTESİ",
@@ -58,7 +58,7 @@
         "website": "-",
         "email": "-",
         "adress": "-",
-        "rector": "-"
+        "uid": 5
       }
     ]
   },
@@ -73,7 +73,7 @@
         "website": "http://www.agri.edu.tr",
         "email": "gensek@agri.edu.tr",
         "adress": "Erzurum yolu  4 km 04100 Merkez / AĞRI",
-        "rector": "ABDULHALİK KARABULUT"
+        "uid": 6
       }
     ]
   },
@@ -88,7 +88,7 @@
         "website": "http://www.amasya.edu.tr",
         "email": "webadmin@amasya.edu.tr",
         "adress": "Akbilek Mah. Hakimiyet cad. No:4/3 PK: 05100 Merkez/AMASYA",
-        "rector": "METİN ORBAY"
+        "uid": 7
       }
     ]
   },
@@ -103,7 +103,7 @@
         "website": "-",
         "email": "-",
         "adress": "-",
-        "rector": "MEHMET ÇELİK"
+        "uid": 8
       },
       {
         "name": "ANKARA HACI BAYRAM VELİ ÜNİVERSİTESİ",
@@ -112,7 +112,7 @@
         "website": "-",
         "email": "-",
         "adress": "-",
-        "rector": "-"
+        "uid": 9
       },
       {
         "name": "ANKARA MEDİPOL ÜNİVERSİTESİ",
@@ -121,7 +121,7 @@
         "website": "-",
         "email": "-",
         "adress": "-",
-        "rector": "-"
+        "uid": 10
       },
       {
         "name": "ANKARA MÜZİK VE GÜZEL SANATLAR ÜNİVERSİTESİ",
@@ -130,7 +130,7 @@
         "website": "-",
         "email": "-",
         "adress": "-",
-        "rector": "-"
+        "uid": 11
       },
       {
         "name": "ANKARA SOSYAL BİLİMLER ÜNİVERSİTESİ",
@@ -139,7 +139,7 @@
         "website": "http://www.asbu.edu.tr/",
         "email": "bilgi@asbu.edu.tr",
         "adress": "Hükümet Meydanı No: 2 Ulus/ANKARA",
-        "rector": "MEHMET BARCA"
+        "uid": 12
       },
       {
         "name": "ANKARA ÜNİVERSİTESİ",
@@ -148,7 +148,7 @@
         "website": "http://www.ankara.edu.tr",
         "email": "ankara@ankara.edu.tr",
         "adress": "Ankara Üniversitesi Rektörlüğü Tandoğan/ANKARA",
-        "rector": "ERKAN İBİŞ"
+        "uid": 13
       },
       {
         "name": "ANKARA YILDIRIM BEYAZIT ÜNİVERSİTESİ",
@@ -157,7 +157,7 @@
         "website": "www.ybu.edu.tr",
         "email": "destek@ybu.edu.tr",
         "adress": "Ankara Yıldırım Beyazıt Üniversitesi Esenboğa Külliyesi Esenboğa/Ankara",
-        "rector": "METİN DOĞAN"
+        "uid": 14
       },
       {
         "name": "ATILIM ÜNİVERSİTESİ",
@@ -166,7 +166,7 @@
         "website": "www.atilim.edu.tr",
         "email": "atilimrektorluk@atilim.edu.tr",
         "adress": "Atılım Üniversitesi Kızılcaşar Mah. İncek Kampüsü Gölbaşı/İncek/ANKARA",
-        "rector": "MEHMET YILDIRIM ÜÇTUĞ"
+        "uid": 15
       },
       {
         "name": "BAŞKENT ÜNİVERSİTESİ",
@@ -175,7 +175,7 @@
         "website": "http://www.baskent.edu.tr",
         "email": "rektorlk@baskent.edu.tr",
         "adress": "Başkent Üniversitesi Bağlıca Kampusu Eskişehir Yolu 20. Km Etimesgut/Ankara",
-        "rector": "ALİ HABERAL"
+        "uid": 16
       },
       {
         "name": "ÇANKAYA ÜNİVERSİTESİ",
@@ -184,7 +184,7 @@
         "website": "http://www.cankaya.edu.tr/",
         "email": "webadmin@cankaya.edu.tr",
         "adress": "Çankaya Üniversitesi  Merkez Kampüs : Eskişehir Yolu 29. Km Yukarıyurtçu Mahallesi, Mimar Sinan Caddesi No:4, 06790, Etimesgut / ANKARA",
-        "rector": "HAMDİ MOLLAMAHMUTOĞLU"
+        "uid": 17
       },
       {
         "name": "GAZİ ÜNİVERSİTESİ",
@@ -193,7 +193,7 @@
         "website": "http://gazi.edu.tr/",
         "email": ".@gazi.edu.tr",
         "adress": "Gazi Üniversitesi Rektörlüğü 06500 Teknikokullar / Ankara",
-        "rector": "İBRAHİM USLAN"
+        "uid": 18
       },
       {
         "name": "HACETTEPE ÜNİVERSİTESİ",
@@ -202,7 +202,7 @@
         "website": "http://hacettepe.edu.tr",
         "email": "ozelkalem@hacettepe.edu.tr",
         "adress": "Hacettepe Üniversitesi Rektörlüğü Sıhhıye/ANKARA",
-        "rector": "ABDURRAHİM HALUK ÖZEN"
+        "uid": 19
       },
       {
         "name": "İHSAN DOĞRAMACI BİLKENT ÜNİVERSİTESİ",
@@ -211,7 +211,7 @@
         "website": "http://www.bilkent.edu.tr/",
         "email": "bilinfo@bilkent.edu.tr",
         "adress": "BİLKENT ÜNİVERSİTESİ 06800 BİLKENT/ANKARA",
-        "rector": "ABDULLAH ATALAR"
+        "uid": 20
       },
       {
         "name": "LOKMAN HEKİM ÜNİVERSİTESİ",
@@ -220,7 +220,7 @@
         "website": "-",
         "email": "-",
         "adress": "-",
-        "rector": "-"
+        "uid": 21
       },
       {
         "name": "ORTA DOĞU TEKNİK ÜNİVERSİTESİ",
@@ -229,7 +229,7 @@
         "website": "http://www.metu.edu.tr",
         "email": "gensek@metu.edu.tr",
         "adress": "Orta Doğu Teknik Üniversitesi Üniversiteler Mah.Dumlupınar Blv.No:1 06800 Çankaya Ankara/TÜRKİYE",
-        "rector": "MUSTAFA VERŞAN KÖK"
+        "uid": 22
       },
       {
         "name": "OSTİM TEKNİK ÜNİVERSİTESİ",
@@ -238,7 +238,7 @@
         "website": "-",
         "email": "-",
         "adress": "-",
-        "rector": "-"
+        "uid": 23
       },
       {
         "name": "TED ÜNİVERSİTESİ",
@@ -247,7 +247,7 @@
         "website": "http://www.tedu.edu.tr",
         "email": "info@tedu.edu.tr",
         "adress": "TED Üniversitesi, Ziya Gökalp Caddesi No.48 06420, Kolej Çankaya ANKARA",
-        "rector": "HALİSE BELGİN AYVAŞIK"
+        "uid": 24
       },
       {
         "name": "TOBB EKONOMİ VE TEKNOLOJİ ÜNİVERSİTESİ",
@@ -256,7 +256,7 @@
         "website": "www.etu.edu.tr",
         "email": "bilgi@etu.edu.tr",
         "adress": "SÖĞÜTÖZÜ CADDESİ NO:43 ÇANKAYA/ANKARA",
-        "rector": "ADEM ŞAHİN"
+        "uid": 25
       },
       {
         "name": "TÜRK HAVA KURUMU ÜNİVERSİTESİ",
@@ -265,7 +265,7 @@
         "website": "http://www.thk.edu.tr",
         "email": "rektor@thk.edu.tr",
         "adress": "Bahçekapı Mahallesi Okul Sokak No:11 Etimesgut / ANKARA",
-        "rector": "AHMET ERMAN AKBULUT"
+        "uid": 26
       },
       {
         "name": "UFUK ÜNİVERSİTESİ",
@@ -274,7 +274,7 @@
         "website": "http://www.ufuk.edu.tr",
         "email": "ozelkalem@ufuk.edu.tr",
         "adress": "Ufuk Üniversitesi Rektörlüğü  Kızılcaşar Mahallesi İncek Bulvarı 06836 İncek/Gölbaşı/ANKARA",
-        "rector": "TEVFİK TEZCANER"
+        "uid": 27
       },
       {
         "name": "YÜKSEK İHTİSAS ÜNİVERSİTESİ",
@@ -283,7 +283,7 @@
         "website": "http://yiu.edu.tr",
         "email": "yiu@yiu.edu.tr",
         "adress": "Oğuzlar Mahallesi 1377 Sokak No:21 Balgat ANKARA",
-        "rector": "RABET GÖZİL"
+        "uid": 28
       }
     ]
   },
@@ -298,7 +298,7 @@
         "website": "http://www.akdeniz.edu.tr",
         "email": "info@akdeniz.edu.tr",
         "adress": "Akdeniz Üniversitesi Kampüs Antalya",
-        "rector": "MUSTAFA ÜNAL"
+        "uid": 29
       },
       {
         "name": "ALANYA ALAADDİN KEYKUBAT ÜNİVERSİTESİ",
@@ -307,7 +307,7 @@
         "website": "http://www.alanya.edu.tr/",
         "email": "alku@alanya.edu.tr",
         "adress": "Kestel Mahallesi Alanya Alaaddin Keykubat Üniversitesi Kampüsü Alanya/ANTALYA",
-        "rector": "AHMET PINARBAŞI"
+        "uid": 30
       },
       {
         "name": "ALANYA HAMDULLAH EMİN PAŞA ÜNİVERSİTESİ",
@@ -316,7 +316,7 @@
         "website": "http://www.ahep.edu.tr",
         "email": "info@ahep.edu.tr",
         "adress": "Cikcilli Beldesi, Saraybeleni Mahallesi, Saraybeleni Cad. No:7, PK 80 07400, Alanya, ANTALYA",
-        "rector": "MEHMET DURDU ÖNER"
+        "uid": 31
       },
       {
         "name": "ANTALYA AKEV ÜNİVERSİTESİ",
@@ -325,7 +325,7 @@
         "website": "www.akev.edu.tr",
         "email": "h.aktas@akev.edu.tr",
         "adress": "Kadriye Mah. Celal Bayar Cad. No:5-6 Serik/ANTALYA",
-        "rector": "MEHMET UFUK TUTAN"
+        "uid": 32
       },
       {
         "name": "ANTALYA BİLİM ÜNİVERSİTESİ",
@@ -334,7 +334,7 @@
         "website": "http://www.antalya.edu.tr/",
         "email": "info@antalya.edu.tr",
         "adress": "Farabi Cad. No:2 Döşemealtı / ANTALYA",
-        "rector": "İSMAİL YÜKSEK"
+        "uid": 33
       }
     ]
   },
@@ -349,7 +349,7 @@
         "website": "http://www.artvin.edu.tr",
         "email": "artvin@artvin.edu.tr",
         "adress": "Artvin Çoruh Üniversitesi Rektörlüğü Fidanlık Mah.Kapı Nu.110 08000 Seyitler Yerleşkesi-ARTVİN",
-        "rector": "FAHRETTİN TİLKİ"
+        "uid": 34
       }
     ]
   },
@@ -364,7 +364,7 @@
         "website": "http://www.adu.edu.tr",
         "email": "ozelkalem@adu.edu.tr",
         "adress": "AYTEPE MEVKİ AYDIN",
-        "rector": "CAVİT BİRCAN"
+        "uid": 35
       }
     ]
   },
@@ -379,7 +379,7 @@
         "website": "http://www.balikesir.edu.tr/",
         "email": "bau@balikesir.edu.tr",
         "adress": "Çağış Yerleşkesi. Bigadiç Yolu 17. Km. BALIKESİR",
-        "rector": "KERİM ÖZDEMİR"
+        "uid": 36
       },
       {
         "name": "BANDIRMA ONYEDİ EYLÜL ÜNİVERSİTESİ",
@@ -388,7 +388,7 @@
         "website": "http://www.bandirma.edu.tr",
         "email": "rektorluk@bandirma.edu.tr",
         "adress": "Yeni Mh. Şehit Astsubay Mustafa Soner Varlık Cd. No:77 Bandırma/BALIKESİR",
-        "rector": "SÜLEYMAN ÖZDEMİR"
+        "uid": 37
       }
     ]
   },
@@ -403,7 +403,7 @@
         "website": "http://www.bilecik.edu.tr/",
         "email": "genelsekreterlik@bilecik.edu.tr",
         "adress": "Bilecik Şeyh Edebali Üniversitesi Rektörlüğü 11210 Merkez Bilecik",
-        "rector": "İBRAHİM TAŞ"
+        "uid": 38
       }
     ]
   },
@@ -418,7 +418,7 @@
         "website": "http://www.bingol.edu.tr",
         "email": "ozelkalem@bingol.edu.tr",
         "adress": "Selahaddin-i Eyyübi Mah. Aydınlık Cad. No:1 BİNGÖL",
-        "rector": "İBRAHİM ÇAPAK"
+        "uid": 39
       }
     ]
   },
@@ -433,7 +433,7 @@
         "website": "http://www.beu.edu.tr/Default.aspx",
         "email": "info@beu.edu.tr",
         "adress": "Beş Minare Mah. Rahva Yerleşkesi - Bitlis",
-        "rector": "ERDAL YARDIM"
+        "uid": 40
       }
     ]
   },
@@ -448,7 +448,7 @@
         "website": "http://www.ibu.edu.tr/",
         "email": "bilgi@ibu.edu.tr",
         "adress": "Abant İzzet Baysal Üniversitesi Gölköy Kampüsü 14280 BOLU",
-        "rector": "MUSTAFA ALİŞARLI"
+        "uid": 41
       }
     ]
   },
@@ -463,7 +463,7 @@
         "website": "http://www.mehmetakif.edu.tr",
         "email": "rektorluk@mehmetakif.edu.t r",
         "adress": "İstiklal Yerleşkesi BURDUR",
-        "rector": "ADEM KORKMAZ"
+        "uid": 42
       }
     ]
   },
@@ -478,7 +478,7 @@
         "website": "http://btu.edu.tr/",
         "email": "ozelkalem@btu.edu.tr",
         "adress": "Mimar Sinan Mahallesi Mimar Sinan Bulvarı Eflak Caddesi No:177 16310 Yıldırım/BURSA",
-        "rector": "ARİF KARADEMİR"
+        "uid": 43
       },
       {
         "name": "BURSA ULUDAĞ ÜNİVERSİTESİ",
@@ -487,7 +487,7 @@
         "website": "http://www.uludag.edu.tr/",
         "email": "ozelkalem@uludag.edu.tr",
         "adress": "Görükle Kampusu 16059 Nilüfer/BURSA",
-        "rector": "YUSUF ULCAY"
+        "uid": 44
       },
       {
         "name": "FARUK SARAÇ TASARIM MESLEK YÜKSEKOKULU",
@@ -496,7 +496,7 @@
         "website": "http://www.faruksarac.edu.tr",
         "email": "info@faruksarac.edu.tr",
         "adress": "Kocanaip Mah. Kaplıca Cad. No:3 16060 Muradiye",
-        "rector": "-"
+        "uid": 45
       }
     ]
   },
@@ -511,7 +511,7 @@
         "website": "www.comu.edu.tr",
         "email": "ozelkalem@comu.edu.tr",
         "adress": "Çanakkale Onsekiz Mart Üniversitesi, Terzioğlu Kampüsü, Rektörlük Binası , A Blok  Merkez/ÇANAKKALE",
-        "rector": "YÜCEL ACER"
+        "uid": 46
       }
     ]
   },
@@ -526,7 +526,7 @@
         "website": "www.karatekin.edu.tr",
         "email": "cku@karatekin.edu.tr",
         "adress": "Uluyazı Kampüsü Binası / Çankırı",
-        "rector": "HASAN AYRANCI"
+        "uid":47
       }
     ]
   },
@@ -541,7 +541,7 @@
         "website": "http://www.hitit.edu.tr/",
         "email": "rektorluk@hitit.edu.tr",
         "adress": "Hitit Üniversitesi Kuzey Kampüsü Çevre Yolu Bulvarı PK:19030 ÇORUM",
-        "rector": "REHA METİN ALKAN"
+        "uid":48
       }
     ]
   },
@@ -556,7 +556,7 @@
         "website": "http://www.pau.edu.tr",
         "email": "ozelkalem@pau.edu.tr",
         "adress": "Pamukkale Üniversitesi Rektörlüğü Kınıklı Yerleşkesi 20070 DENİZLİ",
-        "rector": "HÜSEYİN BAĞ"
+        "uid": 49
       }
     ]
   },
@@ -571,7 +571,7 @@
         "website": "www.dicle.edu.tr",
         "email": "gensek@dicle.edu.tr",
         "adress": "21280 Kıtılbil Mahallesi Sur / Diyarbakır",
-        "rector": "TALİP GÜL"
+        "uid": 50
       }
     ]
   },
@@ -586,7 +586,7 @@
         "website": "http://www.trakya.edu.tr/",
         "email": "genelsekreterlik@trakya.edu.tr",
         "adress": "Trakya Üniversitesi Rektörlüğü 22030 Balkan Yerleşkesi / EDİRNE",
-        "rector": "ERHAN TABAKOĞLU"
+        "uid": 51
       }
     ]
   },
@@ -601,7 +601,7 @@
         "website": "http://www.firat.edu.tr/",
         "email": "okalem@firat.edu.tr",
         "adress": "Fırat Üniversitesi Rektörlüğü 23119 ELAZIĞ",
-        "rector": "KUTBEDDİN DEMİRDAĞ"
+        "uid": 52
       }
     ]
   },
@@ -616,7 +616,7 @@
         "website": "http://www.erzincan.edu.tr",
         "email": "rektorluk@erzincan.edu.tr",
         "adress": "Fatih Mahallesi Erzincan Üniversitesi Rektörlüğü - Erzincan/Merkez",
-        "rector": "İLYAS ÇAPOĞLU"
+        "uid": 53
       }
     ]
   },
@@ -631,7 +631,7 @@
         "website": "http://www.atauni.edu.tr",
         "email": "ata@atauni.edu.tr",
         "adress": "Atatürk Üniversitesi Rektörlüğü Yakutiye/Erzurum",
-        "rector": "ÖMER ÇOMAKLI"
+        "uid": 54
       },
       {
         "name": "ERZURUM TEKNİK ÜNİVERSİTESİ",
@@ -640,7 +640,7 @@
         "website": "http://www.erzurum.edu.tr/",
         "email": "bilgi@erzurum.edu.tr",
         "adress": "ERZURUM TEKNİK ÜNİVERSİTESİ Ömer Nasuhi Bilmen Mah. Havaalanı Yolu Cad. No:53 YAKUTİYE/ERZURUM",
-        "rector": "MUAMMER YAYLALI"
+        "uid": 55
       }
     ]
   },
@@ -655,7 +655,7 @@
         "website": "http://www.anadolu.edu.tr/",
         "email": "gensek@anadolu.edu.tr",
         "adress": "Anadolu Üniversitesi Yunus Emre Kampusü, 26470 Tepebaşı/ESKİŞEHİR",
-        "rector": "-"
+        "uid":56
       },
       {
         "name": "ESKİŞEHİR OSMANGAZİ ÜNİVERSİTESİ",
@@ -664,7 +664,7 @@
         "website": "http://www.ogu.edu.tr",
         "email": "rektor@ogu.edu.tr",
         "adress": "Eskişehir Osmangazi Üniversitesi Meşelik Yerleşkesi 26480 Eskişehir",
-        "rector": "KEMAL ŞENOCAK"
+        "uid": 57
       },
       {
         "name": "ESKİŞEHİR TEKNİK ÜNİVERSİTESİ",
@@ -673,7 +673,7 @@
         "website": "-",
         "email": "-",
         "adress": "-",
-        "rector": "-"
+        "uid": 58
       }
     ]
   },
@@ -688,7 +688,7 @@
         "website": "-",
         "email": "-",
         "adress": "-",
-        "rector": "-"
+        "uid": 59
       },
       {
         "name": "GAZİANTEP ÜNİVERSİTESİ",
@@ -697,7 +697,7 @@
         "website": "http://www.gantep.edu.tr",
         "email": "reksek@gantep.edu.tr",
         "adress": "GAZİANTEP ÜNİVERSİTESİ REKTÖRLÜĞÜ",
-        "rector": "ALİ GÜR"
+        "uid": 60
       },
       {
         "name": "HASAN KALYONCU ÜNİVERSİTESİ",
@@ -706,7 +706,7 @@
         "website": "www.hku.edu.tr",
         "email": "info@hku.edu.tr",
         "adress": "Havalimanı Yolu üzeri 8.km Şahinbey/GAZİANTEP",
-        "rector": "TAMER YILMAZ"
+        "uid": 61
       },
       {
         "name": "SANKO ÜNİVERSİTESİ",
@@ -715,7 +715,7 @@
         "website": "http://www.sanko.edu.tr",
         "email": "info@sanko.edu.tr",
         "adress": "İncilipınar Mah. Gazi Muhtar Paşa Bulv. No:36 27090 Şehitkamil/ GAZİANTEP",
-        "rector": "GÜNER DAĞLI"
+        "uid": 62
       }
     ]
   },
@@ -730,7 +730,7 @@
         "website": "http://www.giresun.edu.tr/",
         "email": "rektor@giresun.edu.tr",
         "adress": "Giresun Üniversitesi | Giresun",
-        "rector": "CEVDET COŞKUN"
+        "uid": 63
       }
     ]
   },
@@ -745,7 +745,7 @@
         "website": "http://www.gumushane.edu.tr",
         "email": "gumushane@gumushane.edu.tr",
         "adress": "Gümüşhane Üniversitesi Rektörlüğü Bağlarbaşı Mh.",
-        "rector": "HALİL İBRAHİM ZEYBEK"
+        "uid": 64
       }
     ]
   },
@@ -760,7 +760,7 @@
         "website": "www.hakkari.edu.tr / www.hu.edu.tr",
         "email": "rektorluk@hakkari.edu.tr",
         "adress": "Merzan Mah. Küçük Sanayi Sitesi arkası Merkez/HAKKARİ",
-        "rector": "ÖMER PAKİŞ"
+        "uid": 65
       }
     ]
   },
@@ -775,7 +775,7 @@
         "website": "http://www.mku.edu.tr",
         "email": "rektorlukyaziisleri@mku.edu.tr",
         "adress": "Alahan Tayfur Sökmen Kampüsü Dış kapı no:35 Adres No:3330417886 Alahan/Antakya/Hatay",
-        "rector": "HASAN KAYA"
+        "uid":66
       },
       {
         "name": "İSKENDERUN TEKNİK ÜNİVERSİTESİ",
@@ -784,7 +784,7 @@
         "website": "www.iste.edu.tr",
         "email": "ofis@iste.edu.tr",
         "adress": "İskenderun Teknik Üniversitesi Rektörlüğü Merkez Kampüs 31200 İskenderun/HATAY",
-        "rector": "TÜRKAY DERELİ"
+        "uid":67
       }
     ]
   },
@@ -799,7 +799,7 @@
         "website": "-",
         "email": "-",
         "adress": "-",
-        "rector": "-"
+        "uid":68
       },
       {
         "name": "SÜLEYMAN DEMİREL ÜNİVERSİTESİ",
@@ -808,7 +808,7 @@
         "website": "http://www.sdu.edu.tr/",
         "email": "bidb@sdu.edu.tr",
         "adress": "Süleyman Demirel Üniversitesi Batı Yerleşkesi Rektörlük Binası 32260  Çünür / ISPARTA",
-        "rector": "İLKER HÜSEYİN ÇARIKÇI"
+        "uid": 69
       }
     ]
   },
@@ -823,7 +823,7 @@
         "website": "http://www.cag.edu.tr/",
         "email": "cag@cag.edu.tr",
         "adress": "Adana-Mersin D 400 Karayolu Üzeri 33800 Yenice-Tarsus/MERSİN",
-        "rector": "ÜNAL AY"
+        "uid": 70
       },
       {
         "name": "MERSİN ÜNİVERSİTESİ",
@@ -832,7 +832,7 @@
         "website": "http://www.mersin.edu.tr/idari/ozel-kalem-",
         "email": "ozelkalem@mersin.edu.tr",
         "adress": "Mersin Üniversitesi Çiftlikköy Kampusu Rektörlük Binası 33343 Yenişehir/MERSİN",
-        "rector": "AHMET ÇAMSARI"
+        "uid": 71
       },
       {
         "name": "TARSUS ÜNİVERSİTESİ",
@@ -841,7 +841,7 @@
         "website": "-",
         "email": "-",
         "adress": "-",
-        "rector": "-"
+        "uid": 72
       },
       {
         "name": "TOROS ÜNİVERSİTESİ",
@@ -850,7 +850,7 @@
         "website": "www.toros.edu.tr",
         "email": "rektorluk@toros.edu.tr",
         "adress": "Bahçelievler Kampüsü 1857 Sokak No:12 33140 Yenişehir MERSİN",
-        "rector": "HALUK KORKMAZYÜREK"
+        "uid": 73
       }
     ]
   },
@@ -865,7 +865,7 @@
         "website": "http://www.acibadem.edu.tr",
         "email": "info@acibadem.edu.tr",
         "adress": "İçerenköy Mah. Kayışdağı Cad. No:32 İçerenköy 34752 Ataşehir İstanbul",
-        "rector": "AHMET ŞAHİN"
+        "uid": 74
       },
       {
         "name": "ALTINBAŞ ÜNİVERSİTESİ",
@@ -874,7 +874,7 @@
         "website": "http://www.altinbas.edu.tr/tr",
         "email": "ik@altinbas.edu.tr",
         "adress": "Mahmutbey, Dİlmenler Cd. No. 26 Bağcılar, İstanbul",
-        "rector": "ÇAĞRI ERHAN"
+        "uid": 75
       },
       {
         "name": "ATAŞEHİR ADIGÜZEL MESLEK YÜKSEKOKULU",
@@ -883,7 +883,7 @@
         "website": "http://www.adiguzel.edu.tr/",
         "email": "iletisim@adiguzel.edu.tr",
         "adress": "Yenişehir Mahallesi Barajyolu Caddesi Çağlayan Sokak No:18 Ataşehir / İstanbul",
-        "rector": "-"
+        "uid": 76
       },
       {
         "name": "AVRUPA MESLEK YÜKSEKOKULU",
@@ -892,7 +892,7 @@
         "website": "www.avrupa.edu.tr",
         "email": "ozelkalem@avrupa.edu.tr",
         "adress": "Ahmet Haşim Sokak 5/1 Kazlıçeşme-Zeytinburnu/İSTANBUL",
-        "rector": "-"
+        "uid": 77
       },
       {
         "name": "BAHÇEŞEHİR ÜNİVERSİTESİ",
@@ -901,7 +901,7 @@
         "website": "http://www.bahcesehir.edu.tr",
         "email": "info@bahcesehir.edu.tr",
         "adress": "Çırağan Caddesi Osmanpaşa Mektebi Sokak No: 4-6 3453 Beşiktaş, İSTANBUL / TÜRKİYE",
-        "rector": "ŞENAY YALÇIN"
+        "uid": 78
       },
       {
         "name": "BEYKENT ÜNİVERSİTESİ",
@@ -910,7 +910,7 @@
         "website": "www.beykent.edu.tr",
         "email": "ozelkalem@beykent.edu.tr",
         "adress": "Ayazağa Mahallesi, Hadım Koru Yolu Caddesi, No:19 Sarıyer/İSTANBUL",
-        "rector": "MEHMET EMİN KARAHAN"
+        "uid": 79
       },
       {
         "name": "BEYKOZ ÜNİVERSİTESİ",
@@ -919,7 +919,7 @@
         "website": "www.beykoz.edu.tr",
         "email": "bilgi@beykoz.edu.tr",
         "adress": "Vatan Cad. No: 69 Kavacık Beykoz İstanbul",
-        "rector": "MEHMET DURMAN"
+        "uid": 80
       },
       {
         "name": "BEZM-İ ÂLEM VAKIF ÜNİVERSİTESİ",
@@ -928,7 +928,7 @@
         "website": "http://www.bezmialem.edu.tr/",
         "email": "info@bezmialem.edu.tr",
         "adress": "Adnan Menderes Bulvarı Vatan Cad. 34093 Fatih/İSTANBUL",
-        "rector": "RÜMEYZA KAZANCIOĞLU"
+        "uid": 81
       },
       {
         "name": "BİRUNİ ÜNİVERSİTESİ",
@@ -937,7 +937,7 @@
         "website": "http://www.biruni.edu.tr/",
         "email": "info@biruni.edu.tr",
         "adress": "10. Yıl Caddesi Protokol Yolu No: 45 (Eski Kozlu Mezarlığı altı, Silivrikapı ve Belgratkapı İett durakları arası) 34010 Topkapı İstanbul",
-        "rector": "ADNAN YÜKSEL"
+        "uid": 82
       },
       {
         "name": "BOĞAZİÇİ ÜNİVERSİTESİ",
@@ -946,7 +946,7 @@
         "website": "http://www.boun.edu.tr",
         "email": "kurumsaliletisim@boun.edu.tr",
         "adress": "Boğaziçi Üniversitesi 34342 Bebek/Istanbul Türkiye",
-        "rector": "MEHMED ÖZKAN"
+        "uid":83
       },
       {
         "name": "DOĞUŞ ÜNİVERSİTESİ",
@@ -955,7 +955,7 @@
         "website": "http://www.dogus.edu.tr",
         "email": "rektor@dogus.edu.tr",
         "adress": "Doğuş Üniversitesi Zeamet sk. 34722 Kadıköy/İstanbul",
-        "rector": "ABDULLAH DİÇKOL"
+        "uid": 84
       },
       {
         "name": "FATİH SULTAN MEHMET VAKIF ÜNİVERSİTESİ",
@@ -964,7 +964,7 @@
         "website": "www.fsm.edu.tr",
         "email": "fsm@fsm.edu.tr",
         "adress": "Zeyrek Mah. Büyük karaman Cad. No:53 FATİH/ İSTANBUL",
-        "rector": "MUSA DUMAN"
+        "uid": 85
       },
       {
         "name": "FENERBAHÇE ÜNİVERSİTESİ",
@@ -973,7 +973,7 @@
         "website": "-",
         "email": "-",
         "adress": "-",
-        "rector": "-"
+        "uid": 86
       },
       {
         "name": "GALATASARAY ÜNİVERSİTESİ",
@@ -982,7 +982,7 @@
         "website": "http://www.gsu.edu.tr",
         "email": "info@gsu.edu.tr",
         "adress": "Galatasaray Üniversitesi Çırağan Cad. No:36 34349 Ortaköy/İstanbul",
-        "rector": "EYÜP ERTUĞRUL KARSAK"
+        "uid": 87
       },
       {
         "name": "HALİÇ ÜNİVERSİTESİ",
@@ -991,7 +991,7 @@
         "website": "www.halic.edu.tr",
         "email": "ibrahimyeter@halic.edu.tr",
         "adress": "Sütlüce Mahallesi, İmrahor Caddesi, No:11, Beyoğlu, istanbul",
-        "rector": "ABDURRAHMAN EREN"
+        "uid": 88
       },
       {
         "name": "IŞIK ÜNİVERSİTESİ",
@@ -1000,7 +1000,7 @@
         "website": "http://isikun.edu.tr",
         "email": "berna.avci@isikun.edu.tr",
         "adress": "Işık Üniversitesi, Meşrutiyet Köyü, Üniversitesi Sok. No:2 ŞİLE/İSTANBUL",
-        "rector": "CEMAL İBİŞ"
+        "uid": 89
       },
       {
         "name": "İBN HALDUN ÜNİVERSİTESİ",
@@ -1009,7 +1009,7 @@
         "website": "www.ibnhaldun.edu.tr",
         "email": "info@ibnhaldun.edu.tr",
         "adress": "Ulubatlı Hasan Cd. No:2 34494 Başakşehir / İstanbul",
-        "rector": "RECEP ŞENTÜRK"
+        "uid": 90
       },
       {
         "name": "İSTANBUL AREL ÜNİVERSİTESİ",
@@ -1018,7 +1018,7 @@
         "website": "http://www.arel.edu.tr",
         "email": "arel@arel.edu.tr",
         "adress": "İstanbul Arel Üniversitesi -Türkoba Mah. Erguvan Sokak No: 26/K Tepekent- B.Çekmece/İSTANBUL",
-        "rector": "İHSAN DERMAN"
+        "uid": 91
       },
       {
         "name": "İSTANBUL ATLAS ÜNİVERSİTESİ",
@@ -1027,7 +1027,7 @@
         "website": "-",
         "email": "-",
         "adress": "-",
-        "rector": "-"
+        "uid": 92
       },
       {
         "name": "İSTANBUL AYDIN ÜNİVERSİTESİ",
@@ -1036,7 +1036,7 @@
         "website": "http://www.aydin.edu.tr",
         "email": "info@aydin.edu.tr",
         "adress": "Florya Halit Aydın Kampüsü Beşyol Mah. İnönü Cad. No: 38 Sefaköy- Küçükçekmece/İSTANBUL",
-        "rector": "YADİGAR İZMİRLİ"
+        "uid": 93
       },
       {
         "name": "İSTANBUL AYVANSARAY ÜNİVERSİTESİ",
@@ -1045,7 +1045,7 @@
         "website": "www.ayvansaray.edu.tr",
         "email": "info@ayvansaray.edu.tr",
         "adress": "Ayvansaray Cd. No:45 Balat Fatih / İstanbul",
-        "rector": "SERMİN ÖRNEKTEKİN"
+        "uid": 94
       },
       {
         "name": "İSTANBUL BİLGİ ÜNİVERSİTESİ",
@@ -1054,7 +1054,7 @@
         "website": "www.bilgi.edu.tr",
         "email": "info@bilgi.edu.tr",
         "adress": "Eski Silahtarağa Elektrik Santralı Kazım Karabekir Cad. No: 2/13 34060 Eyüpsultan İstanbul",
-        "rector": "MUSTAFA EGE YAZGAN"
+        "uid": 95
       },
       {
         "name": "İSTANBUL BİLİM ÜNİVERSİTESİ",
@@ -1063,7 +1063,7 @@
         "website": "http://www.istanbulbilim.edu.tr",
         "email": "info@istanbulbilim.edu.tr",
         "adress": "Büyükdere Cad. No:120 Esentepe-Şişli İSTANBUL",
-        "rector": "ÇAVLAN ÇİFTÇİ"
+        "uid": 96
       },
       {
         "name": "İSTANBUL ESENYURT ÜNİVERSİTESİ",
@@ -1072,7 +1072,7 @@
         "website": "http://www.esenyurt.edu.tr",
         "email": "bilgi@esenyurt.edu.tr",
         "adress": "İnönü Mah. Doğan Araslı Bulvarı No:79 Esenyurt-İSTANBUL",
-        "rector": "SUDİ APAK"
+        "uid": 97
       },
       {
         "name": "İSTANBUL GEDİK ÜNİVERSİTESİ",
@@ -1081,7 +1081,7 @@
         "website": "www.gedik.edu.tr",
         "email": "info@gedik.edu.tr",
         "adress": "Cumhuriyet Mahallesi İlkbahar Sokak No: 1 Yakacık 34876 Kartal İstanbul",
-        "rector": "ZAFER UTLU"
+        "uid": 98
       },
       {
         "name": "İSTANBUL GELİŞİM ÜNİVERSİTESİ",
@@ -1090,7 +1090,7 @@
         "website": "www.gelisim.edu.tr",
         "email": "bilgi@gelisim.edu.tr",
         "adress": "Cihangir Mahallesi Şehit Jandarma Komando Er Hakan Öner Sk. No:1 Avcılar / İSTANBUL",
-        "rector": "BURHAN AYKAÇ"
+        "uid": 99
       },
       {
         "name": "İSTANBUL KENT ÜNİVERSİTESİ",
@@ -1099,7 +1099,7 @@
         "website": "www.kent.edu.tr",
         "email": "info@kent.edu.tr",
         "adress": "Cihangir Mahallesi Sıraselviler Caddesi No:71 34433 Beyoğlu İSTANBUL",
-        "rector": "-"
+        "uid": 100
       },
       {
         "name": "İSTANBUL KÜLTÜR ÜNİVERSİTESİ",
@@ -1108,7 +1108,7 @@
         "website": "www.iku.edu.tr",
         "email": "kultur@iku.edu.tr",
         "adress": "Ataköy Yerleşkesi, 34156 Bakırköy / İSTANBUL",
-        "rector": "ERHAN GÜZEL"
+        "uid": 101
       },
       {
         "name": "İSTANBUL MEDENİYET ÜNİVERSİTESİ",
@@ -1117,7 +1117,7 @@
         "website": "http://www.medeniyet.edu.tr",
         "email": "ozelkalem@medeniyet.edu.tr",
         "adress": "Dumlupınar mahallesi, D-100 Karayolu No:98  Kadıköy / İstanbul",
-        "rector": "MUHAMMET İHSAN KARAMAN"
+        "uid":102
       },
       {
         "name": "İSTANBUL MEDİPOL ÜNİVERSİTESİ",
@@ -1126,7 +1126,7 @@
         "website": "www.medipol.edu.tr",
         "email": "bilgi@medipol.edu.tr",
         "adress": "Kavacık Mah.Ekinciler Cad.No:19, 34840 Beykoz-İstanbul",
-        "rector": "SABAHATTİN AYDIN"
+        "uid": 103
       },
       {
         "name": "İSTANBUL OKAN ÜNİVERSİTESİ",
@@ -1135,7 +1135,7 @@
         "website": "www.okan.edu.tr",
         "email": "okan@okan.edu.tr",
         "adress": "Okan Üniversitesi Tuzla Kampüsü, 34959 Akfırat - Tuzla / İSTANBUL",
-        "rector": "AYŞE ŞULE KUT"
+        "uid": 104
       },
       {
         "name": "İSTANBUL RUMELİ ÜNİVERSİTESİ",
@@ -1144,7 +1144,7 @@
         "website": "www.rumeli.edu.tr",
         "email": "bilgi@rumeli.edu.tr",
         "adress": "Yeni Mahalle Mah. Mehmet Silivrili Cad. No: 38/8 Posta Kodu 34570 SİLİVRİ-İSTANBUL",
-        "rector": "SALİH AYNURAL"
+        "uid": 105
       },
       {
         "name": "İSTANBUL SABAHATTİN ZAİM ÜNİVERSİTESİ",
@@ -1153,7 +1153,7 @@
         "website": "http://www.izu.edu.tr",
         "email": "bilgi@izu.edu.tr",
         "adress": "Halkalı Cad. No: 2 Halkalı - Küçükçekmece / İSTANBUL Posta Kodu: 34303",
-        "rector": "MEHMET BULUT"
+        "uid": 106
       },
       {
         "name": "İSTANBUL ŞEHİR ÜNİVERSİTESİ",
@@ -1162,7 +1162,7 @@
         "website": "http://www.sehir.edu.tr",
         "email": "info@sehir.edu.tr - rektorluk@sehir.edu.tr",
         "adress": "Orhantepe Mahallesi, Turgut Özal Bulvarı, No: 21, Dragos, 34865 Kartal/İstanbulL",
-        "rector": "PEYAMİ ÇELİKCAN"
+        "uid": 107
       },
       {
         "name": "İSTANBUL ŞİŞLİ MESLEK YÜKSEKOKULU",
@@ -1171,7 +1171,7 @@
         "website": "http://www.sisli.edu.tr",
         "email": "info@sisli.edu.tr",
         "adress": "Esentepe Mh. Büyükdere Cd. No:100 Şişli / İstanbul",
-        "rector": "-"
+        "uid": 108
       },
       {
         "name": "İSTANBUL TEKNİK ÜNİVERSİTESİ",
@@ -1180,7 +1180,7 @@
         "website": "http:www.itu.edu.tr",
         "email": "ozelkalem@itu.edu.tr",
         "adress": "İTÜ Ayazağa Yerleşkesi yeni Rektörlük Binası Kat:2 MASLAK-SARIYER- İSTANBUL",
-        "rector": "MEHMET KARACA"
+        "uid": 109
       },
       {
         "name": "İSTANBUL TİCARET ÜNİVERSİTESİ",
@@ -1189,7 +1189,7 @@
         "website": "http://www.ticaret.edu.tr",
         "email": "rektorluk@ticaret.edu.tr",
         "adress": "Sütlüce Mahallesi, İmrahor Caddesi No: 90 34445 Beyoğlu / İSTANBUL",
-        "rector": "NAZIM EKREN"
+        "uid": 110
       },
       {
         "name": "İSTANBUL ÜNİVERSİTESİ",
@@ -1198,7 +1198,7 @@
         "website": "http://www.istanbul.edu.tr",
         "email": "ubilgi@istanbul.edu.tr",
         "adress": "İSTANBUL ÜNİVERSİTESİ REKTÖRLÜK İSTANBUL UNIVERSITY RECTORATE İstanbul Üniversitesi, Beyazıt Yerleşkesi 34452 Beyazıt, İstanbul – Türkiye",
-        "rector": "MAHMUT AK"
+        "uid": 111
       },
       {
         "name": "İSTANBUL ÜNİVERSİTESİ - CERRAHPAŞA",
@@ -1207,7 +1207,7 @@
         "website": "-",
         "email": "-",
         "adress": "-",
-        "rector": "-"
+        "uid": 112
       },
       {
         "name": "İSTANBUL YENİ YÜZYIL ÜNİVERSİTESİ",
@@ -1216,7 +1216,7 @@
         "website": "www.yeniyuzyil.edu.tr",
         "email": "rektorluk@yeniyuzyil.edu.tr",
         "adress": "T.C. İstanbul Yeni Yüzyıl Üniversitesi Topkapı Dr. Azmi  Ofluoğlu Yerleşkesi",
-        "rector": "İLHAN HACISALİHOĞLU"
+        "uid": 113
       },
       {
         "name": "İSTANBUL 29 MAYIS ÜNİVERSİTESİ",
@@ -1225,7 +1225,7 @@
         "website": "http://www.29mayis.edu.tr",
         "email": "29mayis@29mayis.edu.tr",
         "adress": "İcadiye Bağlarbaşı Cad. No:40 34662 Üsküdar/İSTANBUL",
-        "rector": "İBRAHİM DÖNMEZ"
+        "uid": 114
       },
       {
         "name": "İSTİNYE ÜNİVERSİTESİ",
@@ -1234,7 +1234,7 @@
         "website": "www.istinye.edu.tr",
         "email": "info@istinye.edu.tr",
         "adress": "İstinye Üniversitesi Topkapı Kampüsü, Maltepe Mah., Edirne Çırpıcı Yolu, No.9 Zeytinburnu, İstanbul, 34010",
-        "rector": "MELİH BULU"
+        "uid": 115
       },
       {
         "name": "İZMİR KAVRAM MESLEK YÜKSEKOKULU",
@@ -1243,7 +1243,7 @@
         "website": "www.kavram.edu.tr",
         "email": "kamil.uslu@kavram.edu.tr",
         "adress": "Bahçelievler Mah. Bosna Bulvarı No:140 34680 Çengelköy-Üsküdar/İSTANBUL",
-        "rector": "-"
+        "uid": 116
       },
       {
         "name": "KADİR HAS ÜNİVERSİTESİ",
@@ -1252,7 +1252,7 @@
         "website": "http://www.khas.edu.tr",
         "email": "khas-rektorluk@khas.edu.tr",
         "adress": "Kadir Has Üniversitesi, Kadir Has Caddesi, Cibali / İSTANBUL 34083",
-        "rector": "MUSTAFA AYDIN"
+        "uid": 117
       },
       {
         "name": "KOÇ ÜNİVERSİTESİ",
@@ -1261,7 +1261,7 @@
         "website": "http://www.ku.edu.tr",
         "email": "rektor@ku.edu.tr",
         "adress": "Koç Üniversitesi, Rumelifeneri Yolu, 34450, SARIYER, ISTANBUL",
-        "rector": "UMRAN SAVAŞ İNAN"
+        "uid": 118
       },
       {
         "name": "MALTEPE ÜNİVERSİTESİ",
@@ -1270,7 +1270,7 @@
         "website": "http://www.maltepe.edu.tr/",
         "email": "maltepe@maltepe.edu.tr",
         "adress": "Maltepe Üniversitesi Marmara Eğitim Köyü PK:34857 MALTEPE İSTANBUL",
-        "rector": "ŞAHİN KARASAR"
+        "uid": 119
       },
       {
         "name": "MARMARA ÜNİVERSİTESİ",
@@ -1279,7 +1279,7 @@
         "website": "http://www.marmara.edu.tr/",
         "email": "-",
         "adress": "Göztepe Kampüsü 34722 / Kadıköy - İstanbul",
-        "rector": "MEHMET EMİN ARAT"
+        "uid": 120
       },
       {
         "name": "MEF ÜNİVERSİTESİ",
@@ -1288,7 +1288,7 @@
         "website": "http://www.mef.edu.tr",
         "email": "mef@mef.edu.tr",
         "adress": "Ayazağa Cad. No.4 34396 Maslak - Sarıyer - İstanbul",
-        "rector": "MUHAMMED ŞAHİN"
+        "uid": 121
       },
       {
         "name": "MİMAR SİNAN GÜZEL SANATLAR ÜNİVERSİTESİ",
@@ -1297,7 +1297,7 @@
         "website": "http://www.msgsu.edu.tr",
         "email": "rector@msgsu.edu.tr",
         "adress": "Meclis-i Mebusan Caddesi No: 24 Fındıklı 34427 İstanbul",
-        "rector": "YALÇIN KARAYAĞIZ"
+        "uid": 122
       },
       {
         "name": "NİŞANTAŞI ÜNİVERSİTESİ",
@@ -1306,7 +1306,7 @@
         "website": "http://www.nisantasi.edu.tr",
         "email": "genel.sekreterlik@nisantasi. edu.",
         "adress": "Maslak Mahallesi Söğütözü Sk. No:20/Y Nişantaşı Üniversitesi Maslak 1453 Neotech Kampüsü Sarıyer/İstanbul",
-        "rector": "ESRA HATİPOĞLU"
+        "uid": 123
       },
       {
         "name": "ÖZYEĞİN ÜNİVERSİTESİ",
@@ -1315,7 +1315,7 @@
         "website": "www.ozyegin.edu.tr",
         "email": "rektor@ozyegin.edu.tr",
         "adress": "Nişantepe Mah. Orman Sok. No:34-36 Çekmeköy-İstanbul",
-        "rector": "FERİDE GENÇTÜRK"
+        "uid": 124
       },
       {
         "name": "PİRİ REİS ÜNİVERSİTESİ",
@@ -1324,7 +1324,7 @@
         "website": "http://www.pirireis.edu.tr",
         "email": "bilgi@pirireis.edu.tr",
         "adress": "Postane Mahallesi, Eflatun Sk. No:8, 34940 Tuzla/İSTANBUL",
-        "rector": "ORAL ERDOĞAN"
+        "uid": 125
       },
       {
         "name": "SABANCI ÜNİVERSİTESİ",
@@ -1333,7 +1333,7 @@
         "website": "http://www.sabanciuniv.edu",
         "email": "suhelp@sabanciuniv.edu",
         "adress": "Sabancı Üniversite Orta Mah. Üniversite Caddesi No:27 34956 Orhanlı Tuzla İstanbu",
-        "rector": "ZEHRA SAYERS"
+        "uid": 126
       },
       {
         "name": "SAĞLIK BİLİMLERİ ÜNİVERSİTESİ",
@@ -1342,7 +1342,7 @@
         "website": "http://www.sbu.edu.tr",
         "email": "bilgi@sbu.edu.tr",
         "adress": "Mekteb-i Tıbbiye-i Şahane (Haydarpaşa) Külliyesi, Selimiye Mah. Tıbbiye Cad. No:38 34668 ÜSKÜDAR/İSTANBUL",
-        "rector": "CEVDET ERDÖL"
+        "uid": 127
       },
       {
         "name": "SEMERKAND BİLİM VE MEDENİYET ÜNİVERSİTESİ",
@@ -1351,7 +1351,7 @@
         "website": "-",
         "email": "-",
         "adress": "-",
-        "rector": "-"
+        "uid": 128
       },
       {
         "name": "TÜRK-ALMAN ÜNİVERSİTESİ",
@@ -1360,7 +1360,7 @@
         "website": "http://www.tau.edu.tr/",
         "email": "info@tau.edu.tr",
         "adress": "Şahinkaya Cad. No: 86 Beykoz/İSTANBUL",
-        "rector": "-"
+        "uid": 129
       },
       {
         "name": "TÜRKİYE ULUSLARARASI İSLAM, BİLİM VE TEKNOLOJİ ÜNİVERSİTESİ",
@@ -1369,7 +1369,7 @@
         "website": "-",
         "email": "-",
         "adress": "-",
-        "rector": "-"
+        "uid": 130
       },
       {
         "name": "TÜRK-JAPON BİLİM VE TEKNOLOJİ ÜNİVERSİTESİ",
@@ -1378,7 +1378,7 @@
         "website": "-",
         "email": "-",
         "adress": "-",
-        "rector": "-"
+        "uid": 131
       },
       {
         "name": "ÜSKÜDAR ÜNİVERSİTESİ",
@@ -1387,7 +1387,7 @@
         "website": "http://www.uskudar.edu.tr",
         "email": "info@uskudar.edu.tr",
         "adress": "Altunizade Mah.Haluk Türksoy Sok. No:14 Üsküdar/İstanbul",
-        "rector": "KAŞİF NEVZAT TARHAN"
+        "uid": 132
       },
       {
         "name": "YEDİTEPE ÜNİVERSİTESİ",
@@ -1396,7 +1396,7 @@
         "website": "http://www.yeditepe.edu.tr/",
         "email": "caykutbingol@yeditepe.edu.tr",
         "adress": "26 Ağustos Yerleşimi.Kayışdağı Cad.34755 Ataşehir/İstanbul",
-        "rector": "CANAN AYKUT BİNGÖL"
+        "uid": 133
       },
       {
         "name": "YILDIZ TEKNİK ÜNİVERSİTESİ",
@@ -1405,7 +1405,7 @@
         "website": "http://www.yildiz.edu.tr",
         "email": "ozelkalem@yildiz.edu.tr",
         "adress": "Davutpaşa Mah. Davutpaşa Cad. 34220 Esenler - İstanbul",
-        "rector": "BAHRİ ŞAHİN"
+        "uid": 134
       }
     ]
   },
@@ -1420,7 +1420,7 @@
         "website": "http://www.deu.edu.tr",
         "email": "gen.sek@deu.edu.tr",
         "adress": "Cumhuriyet Bulvarı No:144 Alsancak 35210 Konak/İZMİR",
-        "rector": "ERDAL ÇELİK"
+        "uid": 135
       },
       {
         "name": "EGE ÜNİVERSİTESİ",
@@ -1429,7 +1429,7 @@
         "website": "http://www.ege.edu.tr",
         "email": "webadmin@ege.edu.tr",
         "adress": "Ege Üniversitesi Rektörlüğü Gençlik Caddesi No:12 PK.35040 Bornova / İzmir",
-        "rector": "NECDET BUDAK"
+        "uid": 136
       },
       {
         "name": "İZMİR BAKIRÇAY ÜNİVERSİTESİ",
@@ -1438,7 +1438,7 @@
         "website": "bakircay.edu.tr",
         "email": "info@bakircay.edu.tr",
         "adress": "Seyrek Kampüsü/ Gazi Mustafa Kemal Mah.Kaynaklar Cad./ Seyrek/Menemen/İZMİR",
-        "rector": "MUSTAFA BERKTAŞ"
+        "uid": 137
       },
       {
         "name": "İZMİR DEMOKRASİ ÜNİVERSİTESİ",
@@ -1447,7 +1447,7 @@
         "website": "https://www.idu.edu.tr",
         "email": "iletisim@idu.edu.tr",
         "adress": "Üçkuyular Mahallesi, Gürsel Aksel Bulvarı, No:14 35140 Karabağlar/İZMİR",
-        "rector": "BEDRİYE TUNÇSİPER"
+        "uid": 138
       },
       {
         "name": "İZMİR EKONOMİ ÜNİVERSİTESİ",
@@ -1456,7 +1456,7 @@
         "website": "http://www.ieu.edu.tr",
         "email": "ik@ieu.edu.tr",
         "adress": "Sakarya Cad. No:156 35330 Balçova İZMİR",
-        "rector": "FATMA NACİYE CAN MUĞAN"
+        "uid":139
       },
       {
         "name": "İZMİR KATİP ÇELEBİ ÜNİVERSİTESİ",
@@ -1465,7 +1465,7 @@
         "website": "http://www.ikc.edu.tr/",
         "email": "rektorluk@ikc.edu.tr",
         "adress": "İzmir Kâtip Çelebi Üniversitesi Çiğli Ana Yerleşkesi 35620 İZMİR",
-        "rector": "SAFFET KÖSE"
+        "uid": 140
       },
       {
         "name": "İZMİR TINAZTEPE ÜNİVERSİTESİ",
@@ -1474,7 +1474,7 @@
         "website": "-",
         "email": "-",
         "adress": "-",
-        "rector": "-"
+        "uid": 141
       },
       {
         "name": "İZMİR YÜKSEK TEKNOLOJİ ENSTİTÜSÜ",
@@ -1483,7 +1483,7 @@
         "website": "http://www.iyte.edu.tr/",
         "email": "rektorluk@iyte.edu.tr",
         "adress": "İzmir Yüksek Teknoloji Enstitüsü Gülbahçe Kampüsü Urla/İZMİR",
-        "rector": "MUSTAFA GÜDEN"
+        "uid": 142
       },
       {
         "name": "YAŞAR ÜNİVERSİTESİ",
@@ -1492,7 +1492,7 @@
         "website": "http://www.yasar.edu.tr",
         "email": "burcu.sagir@yasar.edu.tr",
         "adress": "Üniversite Cad., No.:35-37, Ağaçlı Yol, Bornova-İZMİR",
-        "rector": "MEHMET CEMALİ DİNÇER"
+        "uid":143
       }
     ]
   },
@@ -1507,7 +1507,7 @@
         "website": "http://www.kafkas.edu.tr",
         "email": "rektor@kafkas.edu.tr",
         "adress": "Kafkas Üniversitesi Şehitler Mh. Turan Çelik Cd. Kombina Yolu Üzeri Merkez/KARS",
-        "rector": "SAMİ ÖZCAN"
+        "uid": 144
       }
     ]
   },
@@ -1522,7 +1522,7 @@
         "website": "http://www.kastamonu.edu.tr/i ndex.php/tr/",
         "email": "rektor@kastamonu.edu.tr",
         "adress": "Cumhuriyet Meydanı Rektörlük Binası KASTAMONU",
-        "rector": "SEYİT AYDIN"
+        "uid": 145
       }
     ]
   },
@@ -1537,7 +1537,7 @@
         "website": "http://www.agu.edu.tr/rektorlu k-ofisi",
         "email": "ozelkalem@agu.edu.tr",
         "adress": "Barbaros Mahallesi Sümer Kampüsü Kocasinan-KAYSERİ",
-        "rector": "İHSAN SABUNCUOĞLU"
+        "uid": 146
       },
       {
         "name": "ERCİYES ÜNİVERSİTESİ",
@@ -1546,7 +1546,7 @@
         "website": "http://www.erciyes.edu.tr",
         "email": "basinyayin@erciyes.edu.tr",
         "adress": "Talas Yolu Melikgazi 38039 KAYSERİ",
-        "rector": "MUHAMMET GÜVEN"
+        "uid": 147
       },
       {
         "name": "KAYSERİ ÜNİVERSİTESİ",
@@ -1555,7 +1555,7 @@
         "website": "-",
         "email": "-",
         "adress": "-",
-        "rector": "-"
+        "uid": 148
       },
       {
         "name": "NUH NACİ YAZGAN ÜNİVERSİTESİ",
@@ -1564,7 +1564,7 @@
         "website": "http://www.nny.edu.tr",
         "email": "info@nny.edu.tr",
         "adress": "Erkilet Dere Mah. Kuzey Çevreyolu Nuh Naci Yazgan Üniversitesi Kocasinan/Kayseri",
-        "rector": "KERİM GÜNEY"
+        "uid": 149
       }
     ]
   },
@@ -1579,7 +1579,7 @@
         "website": "http://www.klu.edu.tr/",
         "email": "ozelkalem@klu.edu.tr",
         "adress": "Cumhuriyet Mahallesi Kofcaz Yolu Kayalı Yerleşkesi Merkez-Kırklareli",
-        "rector": "BÜLENT ŞENGÖRÜR"
+        "uid": 150
       }
     ]
   },
@@ -1594,7 +1594,7 @@
         "website": "ahievran.edu.tr",
         "email": "ozelkalem@ahievran.edu.tr",
         "adress": "Bağbaşı Mah. Sahir kurutluoğlu cad. NO: 100 Merkez /KIRŞEHİR",
-        "rector": "VATAN KARAKAYA"
+        "uid": 151
       }
     ]
   },
@@ -1609,7 +1609,7 @@
         "website": "www.gtu.edu.tr",
         "email": "bilgi@gtu.edu.tr",
         "adress": "Gebze Teknik Üniversitesi Rektörlüğü Cumhuriyet Mah. 2254 Sok. No:2 Gebze/KOCAELİ",
-        "rector": "MUHAMMED HASAN ASLAN"
+        "uid": 152
       },
       {
         "name": "KOCAELİ ÜNİVERSİTESİ",
@@ -1618,7 +1618,7 @@
         "website": "http://www.kocaeli.edu.tr/",
         "email": "rekiletisim@kocaeli.edu.tr",
         "adress": "Umuttepe Merkez Yerleşkesi 41380 İzmit/KOCAELİ",
-        "rector": "SADETTİN HÜLAGÜ"
+        "uid": 153
       }
     ]
   },
@@ -1633,7 +1633,7 @@
         "website": "http://www.gidatarim.edu.tr/",
         "email": "info@gidatarim.edu.tr",
         "adress": "Dede Korkut Mah. Beyşehir Cad. No:9 42080 Meram / KONYA",
-        "rector": "CUMHUR ÇÖKMÜŞ"
+        "uid": 154
       },
       {
         "name": "KONYA TEKNİK ÜNİVERSİTESİ",
@@ -1642,7 +1642,7 @@
         "website": "-",
         "email": "-",
         "adress": "-",
-        "rector": "-"
+        "uid": 155
       },
       {
         "name": "KTO KARATAY ÜNİVERSİTESİ",
@@ -1651,7 +1651,7 @@
         "website": "http://www.karatay.edu.tr",
         "email": "bilgi@karatay.edu.tr",
         "adress": "KTO Karatay Üniversitesi Rektörlüğü Akabe Mah. Alaaddin Kap Cad. No: 130 Karatay/KONYA",
-        "rector": "BAYRAM SADE"
+        "uid": 156
       },
       {
         "name": "NECMETTİN ERBAKAN ÜNİVERSİTESİ",
@@ -1660,7 +1660,7 @@
         "website": "http://www.konya.edu.tr",
         "email": "bilgi@konya.edu.tr",
         "adress": "Nişantaş Mahallesi Dr.M.Hulusi Baybal Caddesi Bera İş Merkezi No:12 Selçuklu/KONYA",
-        "rector": "MUZAFFET ŞEKER"
+        "uid": 157
       },
       {
         "name": "SELÇUK ÜNİVERSİTESİ",
@@ -1669,7 +1669,7 @@
         "website": "http://www.selcuk.edu.tr/",
         "email": "ozelkalem@selcuk.edu.tr",
         "adress": "Alaaddin Keykubat Kampüsü, Akademi Mahallesi, Yeni İstanbul Caddesi No:369/1 42130",
-        "rector": "MUSTAFA ŞAHİN"
+        "uid": 158
       }
     ]
   },
@@ -1684,7 +1684,7 @@
         "website": "http://dumlupinar.edu.tr",
         "email": "ozelkalem@dpu.edu.tr",
         "adress": "Dumlupınar Üniversitesi Evliya Çelebi Yerleşkesi Tavşanlı Yolu 10. km. KÜTAHYA",
-        "rector": "REMZİ GÖREN"
+        "uid": 159
       },
       {
         "name": "KÜTAHYA SAĞLIK BİLİMLERİ ÜNİVERSİTESİ",
@@ -1693,7 +1693,7 @@
         "website": "-",
         "email": "-",
         "adress": "-",
-        "rector": "-"
+        "uid": 160
       }
     ]
   },
@@ -1708,7 +1708,7 @@
         "website": "http://www.inonu.edu.tr/",
         "email": "universite@inonu.edu.tr",
         "adress": "İnönü Üniversitesi Kampüsü Elazığ Yolu 15. Km. 44280 MALATYA",
-        "rector": "AHMET KIZILAY"
+        "uid":161
       },
       {
         "name": "MALATYA TURGUT ÖZAL ÜNİVERSİTESİ",
@@ -1717,7 +1717,7 @@
         "website": "-",
         "email": "-",
         "adress": "-",
-        "rector": "-"
+        "uid": 162
       }
     ]
   },
@@ -1732,7 +1732,7 @@
         "website": "www.cbu.edu.tr",
         "email": "ozelkalem@cbu.edu.tr",
         "adress": "Şehit Prof. Dr. İlhan Varank Kampüsü 45140 - Yunusemre - MANİSA",
-        "rector": "AHMET KEMAL ÇELEBİ"
+        "uid": 163
       }
     ]
   },
@@ -1747,7 +1747,7 @@
         "website": "-",
         "email": "-",
         "adress": "-",
-        "rector": "-"
+        "uid": 164
       },
       {
         "name": "KAHRAMANMARAŞ SÜTÇÜ İMAM ÜNİVERSİTESİ",
@@ -1756,7 +1756,7 @@
         "website": "www.ksu.edu.tr",
         "email": "genelsekreterlik@ksu.edu.tr",
         "adress": "Kahramanmaraş Sütçü İmam Üniversitesi Rektörlüğü,  Avşar Mah. Batı Çevreyolu Blv.  No: 251/A 46040 - Onikişubat/Kahramanmaraş",
-        "rector": "NİYAZİ CAN"
+        "uid": 165
       }
     ]
   },
@@ -1771,7 +1771,7 @@
         "website": "http://www.artuklu.edu.tr/",
         "email": "pdb@artuklu.edu.tr",
         "adress": "Mardin Artuklu Üniversitesi Yenişehir Yerleşkesi, Diyarbakır Yolu Yenişehir Mardin",
-        "rector": "AHMET AĞIRAKÇA"
+        "uid": 166
       }
     ]
   },
@@ -1786,7 +1786,7 @@
         "website": "http://www.mu.edu.tr/",
         "email": "okalem@mu.edu.tr",
         "adress": "Muğla Sıtkı Koçman Üniversitesi Rektörlüğü 48000 Menteşe/MUĞLA",
-        "rector": "-"
+        "uid": 167
       }
     ]
   },
@@ -1801,7 +1801,7 @@
         "website": "www.alparslan.edu.tr",
         "email": "bilgi@alparslan.edu.tr",
         "adress": "Muş Alparslan Üniversitesi Kampusu, Rektörlük, Diyarbakır Yolu 7. km 49250- MUŞ",
-        "rector": "FETHİ POLAT"
+        "uid": 168
       }
     ]
   },
@@ -1816,7 +1816,7 @@
         "website": "www.kapadokya.edu.tr",
         "email": "info@kapadokya.edu.tr",
         "adress": "Üniversite Meydanı No:2 Mustafapaşa Ürgüp/Nevşehir",
-        "rector": "HASAN ALİ KARASAR"
+        "uid": 169
       },
       {
         "name": "NEVŞEHİR HACI BEKTAŞ VELİ ÜNİVERSİTESİ",
@@ -1825,7 +1825,7 @@
         "website": "http://www.nevsehir.edu.tr/",
         "email": "ozelkalem@nevsehir.edu.tr",
         "adress": "Nevşehir Hacı Bektaş Veli Üniversitesi Rektörlüğü 2000 Evler Mahallesi Zübeyde Hanım Cad. 50300",
-        "rector": "MAZHAR BAĞLI"
+        "uid": 170
       }
     ]
   },
@@ -1840,7 +1840,7 @@
         "website": "http://www.ohu.edu.tr/",
         "email": "ozelkalem@ohu.edu.tr",
         "adress": "Niğde Ömer Halisdemir Üniversitesi Rektörlüğü Rektörlük Binası 2. Kat Merkez Yerleşke Bor Yolu Üzeri 51240 Merkez/NİĞDE",
-        "rector": "MUHSİN KAR"
+        "uid": 171
       }
     ]
   },
@@ -1855,7 +1855,7 @@
         "website": "http://www.odu.edu.tr",
         "email": "rektorozelkalem@odu.edu.tr",
         "adress": "Cumhuriyet Yerleşkesi 52200 Merkez/ORDU",
-        "rector": "TARIK YARILGAÇ"
+        "uid": 172
       }
     ]
   },
@@ -1870,7 +1870,7 @@
         "website": "erdogan.edu.tr",
         "email": "genel.sekreter@erdogan.edu.tr",
         "adress": "Recep Tayyip Erdoğan Üniversitesi Zihni Derin Yerleşkesi, Fener Mah. 53100 RİZE",
-        "rector": "HÜSEYİN KARAMAN"
+        "uid":173
       },
       {
         "name": "SAMSUN ÜNİVERSİTESİ",
@@ -1879,7 +1879,7 @@
         "website": "-",
         "email": "-",
         "adress": "-",
-        "rector": "-"
+        "uid": 174
       }
     ]
   },
@@ -1894,7 +1894,7 @@
         "website": "-",
         "email": "-",
         "adress": "-",
-        "rector": "-"
+        "uid": 175
       },
       {
         "name": "SAKARYA ÜNİVERSİTESİ",
@@ -1903,7 +1903,7 @@
         "website": "http://www.sakarya.edu.tr",
         "email": "ilko@sakarya.edu.tr",
         "adress": "Sakarya Üniversitesi Esentepe Kampüsü 54187 Serdivan / SAKARYA",
-        "rector": "-"
+        "uid": 176
       }
     ]
   },
@@ -1918,7 +1918,7 @@
         "website": "http://www.omu.edu.tr/",
         "email": "iletisim@omu.edu.tr",
         "adress": "Ondokuz Mayıs Üniversitesi Rektörlük Binası Kurupelit Kampüsü, 55139 Atakum / SAMSUN",
-        "rector": "SAİT BİLGİÇ"
+        "uid": 177
       }
     ]
   },
@@ -1933,7 +1933,7 @@
         "website": "https://siirt.edu.tr",
         "email": "siu@siirt.edu.tr",
         "adress": "Kezer Kampüsü SİİRT",
-        "rector": "MURAT ERMAN"
+        "uid": 178
       }
     ]
   },
@@ -1948,7 +1948,7 @@
         "website": "http://www.sinop.edu.tr",
         "email": "sinop@sinop.edu.tr",
         "adress": "Korucuk Köyü Trafo Mahallesi No:36  57000 ? SİNOP",
-        "rector": "NİHAT DALGIN"
+        "uid": 179
       }
     ]
   },
@@ -1963,7 +1963,7 @@
         "website": "-",
         "email": "-",
         "adress": "-",
-        "rector": "-"
+        "uid": 180
       },
       {
         "name": "SİVAS CUMHURİYET ÜNİVERSİTESİ",
@@ -1972,7 +1972,7 @@
         "website": "http://www.cumhuriyet.edu.tr",
         "email": "ryaziisl@cumhuriyet.edu.tr",
         "adress": "Cumhuriyet Üniversitesi, Yenişehşr Mah. Kayseri Caddesi 58140 Kampüs SİVAS",
-        "rector": "ALİM YILDIZ"
+        "uid": 181
       }
     ]
   },
@@ -1987,7 +1987,7 @@
         "website": "http://www.nku.edu.tr",
         "email": "ozelkalem@nku.edu.tr",
         "adress": "Namık Kemal Mah. Kampüs Cad. No:1 Merkez-TEKİRDAĞ",
-        "rector": "OSMAN ŞİMŞEK"
+        "uid":182
       }
     ]
   },
@@ -2002,7 +2002,7 @@
         "website": "www.gop.edu.tr",
         "email": "gensek@gop.edu.tr",
         "adress": "Gaziosmanpaşa Üniversitesi Rektörlüğü Taşlıçiftlik Yerleşkesi TOKAT",
-        "rector": "MUSTAFA ŞAHİN"
+        "uid": 183
       }
     ]
   },
@@ -2017,7 +2017,7 @@
         "website": "http://www.avrasya.edu.tr",
         "email": "info@avrasya.edu.tr",
         "adress": "Avrasya Üniversitesi Rektörlüğü Adnan Kahvesi Mah. Rize Caddesi",
-        "rector": "KENAN İNAN"
+        "uid": 184
       },
       {
         "name": "KARADENİZ TEKNİK ÜNİVERSİTESİ",
@@ -2026,7 +2026,7 @@
         "website": "http://www.ktu.edu.tr",
         "email": "information@ktu.edu.tr",
         "adress": "Karadeniz Teknik Üniversitesi 61080 - Trabzon",
-        "rector": "SÜLEYMAN BAYKAL"
+        "uid": 185
       },
       {
         "name": "TRABZON ÜNİVERSİTESİ",
@@ -2035,7 +2035,7 @@
         "website": "-",
         "email": "-",
         "adress": "-",
-        "rector": "-"
+        "uid": 186
       }
     ]
   },
@@ -2050,7 +2050,7 @@
         "website": "www.munzur.edu.tr",
         "email": "universite@munzur.edu.tr",
         "adress": "Aktuluk Mahallesi Üniversite Yerleşkesi Merkez/TUNCELİ",
-        "rector": "UBEYDE İPEK"
+        "uid": 187
       }
     ]
   },
@@ -2065,7 +2065,7 @@
         "website": "http://www.harran.edu.tr/",
         "email": "ozelkalem@harran.edu.tr",
         "adress": "Hamidiye Mah. Necmettin Cevheri Caddesi, Yenişehir Şanlıurfa/Türkiye",
-        "rector": "RAMAZAN TAŞALTIN"
+        "uid": 188
       }
     ]
   },
@@ -2080,7 +2080,7 @@
         "website": "http://www.usak.edu.tr",
         "email": "ozelkalem@usak.edu.tr",
         "adress": "Uşak Üniversitesi Rektörlüğü 1 Eylül Kampüsü  64200 - UŞAK",
-        "rector": "EKREM SAVAŞ"
+        "uid": 189
       }
     ]
   },
@@ -2095,7 +2095,7 @@
         "website": "http://www.yyu.edu.tr/",
         "email": "bilgi@yyu.edu.tr",
         "adress": "Van Yüzüncü Yıl Üniversitesi Rektörlüğü, 65080, Kampüs / VAN",
-        "rector": "PEYAMİ BATTAL"
+        "uid":190
       }
     ]
   },
@@ -2110,7 +2110,7 @@
         "website": "http://www.bozok.edu.tr/",
         "email": "ozel.kalem@bozok.edu.tr",
         "adress": "Medrese Mahallesi Adnan Menderes Bulvarı No:118 66200 Yozgat",
-        "rector": "SALİH KARACABEY"
+        "uid": 191
       }
     ]
   },
@@ -2125,7 +2125,7 @@
         "website": "http://www.beun.edu.tr",
         "email": "rektor@beun.edu.tr",
         "adress": "Bülent Ecevit Üniversitesi Rektörlüğü İncivez-ZONGULDAK",
-        "rector": "MUSTAFA ÇUFALI"
+        "uid":192
       }
     ]
   },
@@ -2140,7 +2140,7 @@
         "website": "www.aksaray.edu.tr",
         "email": "ozelkalem@aksaray.edu.tr",
         "adress": "Adana yolu 7.Km. E-90 karayolu üzeri Merkez 68100/AKSARAY",
-        "rector": "YUSUF ŞAHİN"
+        "uid": 193
       }
     ]
   },
@@ -2155,7 +2155,7 @@
         "website": "http://www.bayburt.edu.tr",
         "email": "rektor@bayburt.edu.tr",
         "adress": "Dede Korkut Kampüsü 69000 / BAYBURT",
-        "rector": "SELÇUK COŞKUN"
+        "uid": 194
       }
     ]
   },
@@ -2170,7 +2170,7 @@
         "website": "http://www.kmu.edu.tr",
         "email": "iletisim@kmu.edu.tr",
         "adress": "Karamanoğlu Mehmetbey Üniversitesi, Yunus Emre Yerleşkesi, 70100 KARAMAN/ TÜRKİYE",
-        "rector": "MEHMET AKGÜL"
+        "uid": 195
       }
     ]
   },
@@ -2186,7 +2186,7 @@
         "website": "http://www.kku.edu.tr/Anasayfa/Sayfa/Index?",
         "email": "ozelkalem@kku.edu.tr",
         "adress": "Kırıkkale Üniversitesi Ankara Yolu 7. Km 71450 Yahşihan/Kırıkkale",
-        "rector": "-"
+        "uid": 196
       }
     ]
   },
@@ -2201,7 +2201,7 @@
         "website": "http://www.batman.edu.tr",
         "email": "batman@batman.edu.tr",
         "adress": "Batı Raman 72100 Batman, Türkiye",
-        "rector": "AYDIN DURMUŞ"
+        "uid":197
       }
     ]
   },
@@ -2216,7 +2216,7 @@
         "website": "http://www.sirnak.edu.tr",
         "email": "posta@sirnak.edu.tr",
         "adress": "Yeni Mahalle Cizre Caddesi Mehmet Emin Acar Kampüsü 73000 Şırnak - Türkiye",
-        "rector": "MEHMET EMİN ERKAN"
+        "uid": 198
       }
     ]
   },
@@ -2231,7 +2231,7 @@
         "website": "http://www.bartin.edu.tr/",
         "email": "rektorluk@bartin.edu.tr",
         "adress": "Bartın Üniversitesi Rektörlüğü Merkez/BARTIN",
-        "rector": "ORHAN UZUN"
+        "uid": 199
       }
     ]
   },
@@ -2246,7 +2246,7 @@
         "website": "https://www.ardahan.edu.tr",
         "email": "rektorluk@ardahan.edu.tr",
         "adress": "Ardahan Üniversitesi Yenisey Kampüsü, Rektörlük Hizmet Binası, Çamlıçatak Mevkii, 75000, Merkez/Ardahan",
-        "rector": "MEHMET BİBER"
+        "uid": 200
       }
     ]
   },
@@ -2261,7 +2261,7 @@
         "website": "http://www.igdir.edu.tr",
         "email": "info@igdir.edu.tr",
         "adress": "Suveren Kampüsü Suveren Köyü IĞDIR",
-        "rector": "MEHMET HAKKI ALMA"
+        "uid":201
       }
     ]
   },
@@ -2276,7 +2276,7 @@
         "website": "http://www.yalova.edu.tr/rektorluk",
         "email": "bilgi@yalova.edu.tr",
         "adress": "Çınarcık Yolu 3.km Merkez Kampüsü Yalova",
-        "rector": "SUAT CEBECİ"
+        "uid": 202
       }
     ]
   },
@@ -2291,7 +2291,7 @@
         "website": "http://www.karabuk.edu.tr/",
         "email": "iletisim@karabuk.edu.tr",
         "adress": "Karabük Üniversitesi Demir Çelik Kampüsü Balıklar Kaya Mevkii",
-        "rector": "REFİK POLAT"
+        "uid": 203
       }
     ]
   },
@@ -2306,7 +2306,7 @@
         "website": "www.kilis.edu.tr",
         "email": "ozelkalem@kilis.edu.tr",
         "adress": "Mehmet Sanlı Mah. Doğan Güreş Paşa Bulvarı No.134 Merlez/KİLİS",
-        "rector": "MUSTAFA DOĞAN KARACOŞKUN"
+        "uid": 204
       }
     ]
   },
@@ -2321,7 +2321,7 @@
         "website": "http://www.osmaniye.edu.tr",
         "email": "osmaniye@osmaniye.edu.tr",
         "adress": "Karacaoğlan Yerleşkesi 80000 Merkez/OSMANİYE",
-        "rector": "MURAT TÜRK"
+        "uid": 205
       }
     ]
   },
@@ -2336,7 +2336,7 @@
         "website": "http://www.duzce.edu.tr/",
         "email": "gensek@duzce.edu.tr",
         "adress": "Düzce Üniversitesi Rektörlüğü Genel Sekreterlik Beçi Kampüsü Merkez Düzce",
-        "rector": "NİGAR DEMİRCAN ÇAKAR"
+        "uid": 206
       }
     ]
   }

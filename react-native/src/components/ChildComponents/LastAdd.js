@@ -5,9 +5,10 @@ import {
   View,
   Dimensions,
   Image,
-  TouchableOpacity,
+  TouchableOpacity
 } from 'react-native';
-
+(width = Dimensions.get('window').width),
+  (height = Dimensions.get('window').height);
 import {
   AddFavoriteProduct,
   GetFavoriteProduct,
@@ -38,7 +39,7 @@ class LastAdd extends Component {
       <View style={{flexDirection: 'column'}}>
         <TouchableOpacity
           onPress={() => {
-            this.props.PlusCounterProduct(this.props.data._id, this.props.data);
+            this.props.PlusCounterProduct(this.props.data._id);
           }}>
           <View
             style={{
@@ -140,7 +141,7 @@ class LastAdd extends Component {
                       style={{
                         width: 35,
                         height: 35,
-                        tintColor: '#FF4D4D',
+                        tintColor: '#FE5C31',
                       }}
                       source={require('../../assets/like.png')}
                     />

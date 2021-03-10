@@ -28,6 +28,7 @@ export const UpdateProduct = (
   productDetail,
   productPrice,
   university,
+  universityId,
   situation,
 ) => {
   return async (dispatch) => {
@@ -50,6 +51,7 @@ export const UpdateProduct = (
           productDetail,
           productPrice,
           university,
+          universityId,
           situation,
         },
         {
@@ -59,7 +61,7 @@ export const UpdateProduct = (
           },
         },
       );
-      console.log(res.data, 'update hata');
+     
       if (res.data.ok == 1) {
         setTimeout(function () {
           dispatch({type: UPDATE_SITUATION_PRODUCT_SUCCESS});
@@ -93,7 +95,7 @@ export const UpdateSituationProduct = (id, situation) => {
         },
       },
     );
-    console.log(res.data);
+   
     if (res.data.ok == 1) {
       dispatch({type: UPDATE_SITUATION_PRODUCT_SUCCESS});
       toastAlert('ürünün durumu güncellendi');
@@ -140,6 +142,7 @@ export const CreateNewProduct = (
   productDetail,
   productPrice,
   university,
+  universityId,
   photoArray,
 ) => {
   return async (dispatch) => {
@@ -162,6 +165,7 @@ export const CreateNewProduct = (
           productDetail,
           productPrice,
           university,
+          universityId
         },
         {
           headers: {
@@ -170,7 +174,7 @@ export const CreateNewProduct = (
           },
         },
       );
-      console.log(res.data, 'yeni data');
+      
       if (res) {
         counter = 0;
         await Promise.all(
@@ -213,21 +217,19 @@ export const DownloadFirstPhoto = (id, count) => {
         images.push({image: photoUrl});
       }),
     );
-    console.log(images, 'action');
-
-    //console.log(photoUrl,"exporttttttt");
+   
     dispatch({type: DOWNLOAD_PHOTO_SUCCESS, payload: images});
   };
 };
 
 async function uploadImage(image, counter, id) {
   return new Promise((resolve, reject) => {
-    console.log(counter, 'sayac');
+    
     let imgUri = image.path;
     let uploadBlob = null;
     const uploadUri =
       Platform.OS === 'ios' ? imgUri.replace('file://', '') : imgUri;
-    console.log(uploadUri, Platform.OS);
+    
 
     const imageRef = app
       .storage()
@@ -250,7 +252,7 @@ async function uploadImage(image, counter, id) {
         return imageRef.getDownloadURL();
       })
       .then((url) => {
-        console.log(url);
+       
         resolve(url);
       })
       .catch((error) => {
@@ -261,12 +263,12 @@ async function uploadImage(image, counter, id) {
 
 async function deleteImage(id, number) {
   const imageName = id + number;
-  console.log(imageName, 'ımage name', number, ' ', id);
+ 
   let imageRef = app.storage().ref('product/' + imageName);
   const photoUrl = imageRef
     .delete()
     .then(() => {
-      console.log('silindi');
+     
     })
     .catch((e) => {
       console.log('getting downloadURL of image error => ', e);
@@ -281,7 +283,7 @@ async function downloadImage(id, number) {
   const photoUrl = imageRef
     .getDownloadURL()
     .then((url) => {
-      //console.log(url,"foto download")
+      
       return url;
     })
     .catch((e) => console.log('getting downloadURL of image error => ', e));

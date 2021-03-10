@@ -8,7 +8,7 @@ import {
   Dimensions,
 } from 'react-native';
 import AsyncStorage from '@react-native-community/async-storage';
-import {downloadAvatar} from '../functions/downloadFunctions';
+
 import {connect} from 'react-redux';
 width = Dimensions.get('window').width;
 height = Dimensions.get('window').height;
@@ -32,20 +32,22 @@ class UserProfile extends Component {
     avatarUrl: '',
   };
   async componentDidMount() {
-    const userId = await AsyncStorage.getItem('idKitapHAC');
-    const nameT = await AsyncStorage.getItem('nameKitapHAC');
-    const surnameT = await AsyncStorage.getItem('surnameKitapHAC');
-    const universityT = await AsyncStorage.getItem('universityKitapHAC');
-    const url = await downloadAvatar(userId);
+    this.props.navigation.addListener('focus', async () => {
+      const userId = await AsyncStorage.getItem('idKitapHAC');
+      const nameT = await AsyncStorage.getItem('nameKitapHAC');
+      const surnameT = await AsyncStorage.getItem('surnameKitapHAC');
+      const universityT = await AsyncStorage.getItem('universityKitapHAC');
+      const url = await AsyncStorage.getItem('avatarHAC');
 
-    this.setState({
-      name: nameT,
-      surname: surnameT,
-      university: universityT,
-      avatarUrl: url,
+      this.setState({
+        name: nameT,
+        surname: surnameT,
+        university: universityT,
+        avatarUrl: url,
+      });
+
+     
     });
-
-    console.log(nameT, surnameT, universityT);
   }
   render() {
     return (
@@ -56,19 +58,23 @@ class UserProfile extends Component {
               flexDirection: 'row',
               justifyContent: 'space-around',
               marginTop: 30,
-              
             }}>
-            <View style={{flexDirection: 'column',width:width*0.5,justifyContent:"space-around"}}>
+            <View
+              style={{
+                flexDirection: 'column',
+                width: width * 0.5,
+                justifyContent: 'space-around',
+              }}>
               <Text
-              numberOfLines={2}
+                numberOfLines={2}
                 style={{
                   fontFamily: 'Avenir-Black',
                   fontSize: 30,
                   color: '#000000',
                 }}>
-                {this.state.name} {this.state.surname} 
+                {this.state.name} {this.state.surname}
               </Text>
-              
+
               <Text
                 numberOfLines={1}
                 style={{
@@ -77,22 +83,30 @@ class UserProfile extends Component {
                   color: '#626262',
                   marginLeft: 2,
                   marginTop: 10,
-                  
                 }}>
                 {this.state.university}
               </Text>
             </View>
-            <View style={{width: 115, height: 115, borderRadius: 20,backgroundColor:"orange"}}>
+            <View
+              style={{
+                width: 115,
+                height: 115,
+                borderRadius: 20,
+                backgroundColor: 'orange',
+              }}>
               {this.state.avatarUrl == '' ? (
                 <MaterialIndicator></MaterialIndicator>
               ) : (
                 <View>
-                  
-                  {this.state.avatarUrl? <Image
-                    style={{width: 115, height: 115, borderRadius: 20}}
-                    source={{uri: this.state.avatarUrl}}></Image>:<Image
-                    style={{width: 115, height: 115, borderRadius: 20}}
-                    source={require("../assets/adam.jpg")}></Image>}
+                  {this.state.avatarUrl ? (
+                    <Image
+                      style={{width: 115, height: 115, borderRadius: 20}}
+                      source={{uri: this.state.avatarUrl}}></Image>
+                  ) : (
+                    <Image
+                      style={{width: 115, height: 115, borderRadius: 20}}
+                      source={require('../assets/user-2.png')}></Image>
+                  )}
                 </View>
               )}
             </View>
@@ -102,14 +116,13 @@ class UserProfile extends Component {
               flexDirection: 'row',
               justifyContent: 'space-around',
               marginTop: 40,
-              
             }}>
             <TouchableOpacity
               onPress={() => {
                 this.props.navigation.navigate('Settings');
               }}
               style={{
-                width: width*0.5,
+                width: width * 0.5,
                 height: 50,
                 backgroundColor: '#373EEC',
                 opacity: 0.7,
@@ -118,7 +131,7 @@ class UserProfile extends Component {
                 borderRadius: 7,
               }}>
               <Text
-              numberOfLines={1}
+                numberOfLines={1}
                 style={{
                   fontFamily: 'AvenirNext-DemiBold',
                   fontSize: 22,
@@ -145,7 +158,6 @@ class UserProfile extends Component {
               justifyContent: 'space-around',
               flexDirection: 'row',
               marginTop: 80,
-             
             }}>
             <TouchableOpacity
               onPress={() => {
@@ -160,7 +172,7 @@ class UserProfile extends Component {
                 borderRadius: 7,
               }}>
               <Text
-              numberOfLines={1}
+                numberOfLines={1}
                 style={{
                   fontFamily: 'AvenirNext-DemiBold',
                   fontSize: 22,
@@ -184,7 +196,7 @@ class UserProfile extends Component {
                 borderRadius: 7,
               }}>
               <Text
-              numberOfLines={1}
+                numberOfLines={1}
                 style={{
                   fontFamily: 'AvenirNext-DemiBold',
                   fontSize: 22,

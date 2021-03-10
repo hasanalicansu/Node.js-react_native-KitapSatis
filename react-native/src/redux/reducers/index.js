@@ -14,6 +14,8 @@ import tokenLoginReducer from "./TokenLoginReducer"
 import chatReducer from "./ChatReducer" 
 import newProductAvailableReducer from "./NewProductAvailableReducer" 
 import avatarReducer from "./AvatarReducer" 
+import forgetPasswordReducer from "./ForgetPasswordReducer" 
+
 
 export default combineReducers({
    getMainResponse : getMainReducer,
@@ -30,5 +32,6 @@ export default combineReducers({
    chatResponse:chatReducer,
    newProductAvailableResponse:newProductAvailableReducer,
    logoutResponse:logoutReducer,
-   avatarResponse:avatarReducer
+   avatarResponse:avatarReducer,
+   forgetPasswordResponse:forgetPasswordReducer
 });

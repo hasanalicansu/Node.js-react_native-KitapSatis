@@ -27,7 +27,7 @@ const auth = async (req, res, next)=>{
         }
 
     } catch (e) {
-        console.log("aaa kiki")
+        
         return res.status(400).json({
             mesaj: e.message,
           });

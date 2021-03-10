@@ -20,6 +20,14 @@
     "moment-timezone": "^0.5.33",
     "mongoose": "^5.11.14",
     "socket.io": "^3.1.0",
-    "socketio-jwt": "^4.6.2"
+    "socketio-jwt": "^4.6.2",
+    "connect-flash": "^0.1.1",
+    "express-ejs-layouts": "^2.5.0",
+    "ejs": "^3.1.5",
+    "nodemailer": "^6.4.16",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
+    "express-validator": "^6.6.1",
+    "express-session": "^1.17.1"
   }
 }

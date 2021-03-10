@@ -37,10 +37,14 @@ export const loginUser = ({email, password}) => {
         },
       })
         .then(async (user) => {
-          console.log(user.data);
+         
           const resToken = await saveData('tokenKitapHAC', user.data.token);
           const resName = await saveData('nameKitapHAC', user.data.user.name);
           const resId = await saveData('idKitapHAC', user.data.user._id);
+          const resUni = await saveData('uniKitapHAC', user.data.user.userUniversity);
+          const resUniId = await saveData('uniIdKitapHAC', String(user.data.user.userUniversityId));
+          const resAvatar = await saveData('avatarHAC', String(user.data.user.avatar));
+          
           const resSurname = await saveData(
             'surnameKitapHAC',
             user.data.user.surname,
@@ -53,7 +57,7 @@ export const loginUser = ({email, password}) => {
             'universityKitapHAC',
             user.data.user.userUniversity,
           );
-          console.log(resUniversity);
+         
           readData();
         })
         .then(() => loginSuccess(dispatch))
@@ -88,13 +92,14 @@ export const RegisterUser = ({
   email,
   password,
   userUniversity,
+  userUniversityId
 }) => {
   return async (dispatch) => {
     try {
       dispatch({
         type: REGISTER_USER,
       });
-      console.log(name, surname, email, password, userUniversity);
+    
       const res = await axios.post(
         'http://localhost:3000/api/users/createAccount',
         {
@@ -103,6 +108,7 @@ export const RegisterUser = ({
           email: email.toLowerCase(),
           password: password,
           userUniversity: userUniversity,
+          userUniversityId:userUniversityId
         },
         {
           headers: {
@@ -111,7 +117,7 @@ export const RegisterUser = ({
         },
       );
       if (res.status == 206) {
-        console.log(res.status);
+      
         Alert.alert(
           'HATA',
           res.data.msg,
@@ -189,14 +195,14 @@ const saveData = async (dataName, data) => {
 const readData = async () => {
   try {
     const userToken = await AsyncStorage.getItem('tokenKitapHAC');
-    console.log(userToken);
+ 
   } catch (e) {
     alert('Failed to fetch the data from storage');
   }
 };
 
 const loginSuccess = (dispatch) => {
-  console.log('darararö');
+ 
   dispatch({
     type: LOGIN_USER_SUCCESS,
   });

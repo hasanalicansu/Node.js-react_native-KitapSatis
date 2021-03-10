@@ -18,6 +18,7 @@ const createNewProduct = async (req, res, next) => {
       productPrice: req.body.productPrice,
       productOwner: req.user._id,
       university: req.body.university,
+      universityId: req.body.universityId,
       productPhoto,
     });
     const result = await productToAdd.save();
@@ -46,7 +47,7 @@ const plusCounterProduct = async (req, res, next) => {
         { new: true, runValidators: true }
       );
       if (result2) {
-        res.status(200).json(result2);
+        res.status(200).json(result);
       } else {
         res.status(400);
       }
@@ -103,6 +104,7 @@ const updateProduct = async (req, res, next) => {
           productDetail: req.body.productDetail,
           productPrice: req.body.productPrice,
           university: req.body.university,
+          universityId: req.body.universityId,
           situation: req.body.situation,
         },
         {
@@ -132,7 +134,7 @@ const updateProduct = async (req, res, next) => {
 
 const GetTenLastProduct = async (req, res, next) => {
   try {
-    const result = await Product.find({ productOwner: { $ne:  req.user._id } }).sort({ createdAt: -1 }).limit(10); //en son 10 data gelir
+    const result = await Product.find({ productOwner: { $ne:  req.user._id },situation:true }).sort({ createdAt: -1 }).limit(10); //en son 10 data gelir
     res.status(200).json(result);
   } catch (error) {
     res.status(400).json({
@@ -143,7 +145,7 @@ const GetTenLastProduct = async (req, res, next) => {
 
 const GetTenMostProduct = async (req, res, next) => {
   try {
-    const result = await Product.find({ productOwner: { $ne:  req.user._id } }).sort({ counter: -1 }).limit(10); //en son 10 data gelir
+    const result = await Product.find({ productOwner: { $ne:  req.user._id },situation:true }).sort({ counter: -1 }).limit(10); //en son 10 data gelir
     if (result) {
       res.status(200).json(result);
     } else {
@@ -247,25 +249,18 @@ const updateSituationProduct = async (req, res, next) => {
 
 const GetSearch = async (req, res, next) => {
   try {
-    console.log("queryCheck",
-      req.query.universite,
-      req.query.sortBy,
-      req.query.title,
-      req.query
-    );
+    
 
     const queryCond = {};
     const queryCondSort = {};
-
- 
-    if (req.query.universite) {
-      queryCond.university = req.query.universite;
+    if (req.query.universiteId) {
+      queryCond.universityId = Number(req.query.universiteId);
     }
     if (req.query.sortBy) {
-      queryCondSort.createdAt = Number(req.query.sortBy);
+      queryCondSort.productPrice = Number(req.query.sortBy);
     }
 
-    console.log("girdi", queryCond);
+    
     const result = await Product.find({}, {})
       .or([
         { productDetail: { $regex: ".*" + req.query.title + ".*" } },
