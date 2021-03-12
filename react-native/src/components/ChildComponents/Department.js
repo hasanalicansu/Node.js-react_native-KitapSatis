@@ -21,7 +21,7 @@ class Department extends Component {
   async componentDidMount() {
     const userUni = await AsyncStorage.getItem('uniKitapHAC');
     const userUniId = await AsyncStorage.getItem('uniIdKitapHAC');
-    
+    console.log(userUni, userUniId);
     this.setState({universite: userUni, universiteId: userUniId});
   }
   render() {
@@ -35,21 +35,29 @@ class Department extends Component {
           <View
             style={{
               width: width * 0.7,
-              backgroundColor: '#6C3483',//FACD5C
+              //backgroundColor: '#6C3483',//FACD5C
               height: 50,
               borderRadius: 5,
               justifyContent: 'center',
-              
             }}>
             <Text
               numberOfLines={1}
+              ellipsizeMode="tail"
               style={{
                 fontSize: 20,
                 textAlign: 'center',
                 fontFamily: 'Avenir-Black',
-                color: '#FACD5C',//6B4DAD FACD5C
-                
+                color: '#FACD5C', //6B4DAD FACD5C
                 marginHorizontal: 20,
+                shadowColor: '#F3DCFC',
+                shadowOffset: {
+                  width: 0,
+                  height: 7,
+                },
+                shadowOpacity: 0.43,
+                shadowRadius: 9.51,
+                elevation: 15,
+                
               }}>
               {this.state.universite}
             </Text>

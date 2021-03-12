@@ -12,7 +12,7 @@ export const getMessage = (roomId) => {
       .ref('/mesajlar/' + roomID)
       .on('value', (messageData) => {
         const messages = [];
-       
+        console.log(messageData, 'message data');
         messageData.forEach((dataFriend) => {
           messages.push({
             id: dataFriend.key,

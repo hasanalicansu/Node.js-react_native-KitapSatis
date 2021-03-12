@@ -122,7 +122,7 @@ class ForgetPassword extends Component {
 }
 
 const mapStateToProps = ({forgetPasswordResponse}) => {
-    
+    console.log(forgetPasswordResponse);
   const loading = forgetPasswordResponse.loading;
   return {loading};
 };

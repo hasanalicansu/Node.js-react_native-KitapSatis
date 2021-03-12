@@ -7,12 +7,12 @@ import AsyncStorage from '@react-native-community/async-storage';
 export const GetMainProduct =  () => {
     return async (dispatch) => {
       const userToken = await AsyncStorage.getItem('tokenKitapHAC');
-      const resNew = await axios.get('http://localhost:3000/api/product/GetTenLastProduct', {
+      const resNew = await axios.get('https://kitapsatis.herokuapp.com/api/product/GetTenLastProduct', {
         headers: {
           Authorization: "Bearer "+userToken,
         },
       });
-      const resMost = await axios.get('http://localhost:3000/api/product/GetTenMostProduct', {
+      const resMost = await axios.get('https://kitapsatis.herokuapp.com/api/product/GetTenMostProduct', {
         headers: {
           Authorization: "Bearer "+userToken,
         },

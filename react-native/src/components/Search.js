@@ -245,7 +245,7 @@ class Search extends Component {
                         fontSize: 20,
                         color: 'red',
                       }}>
-                      Fiyata göre artan
+                      Fiyata göre azalan
                     </Text>
                   ) : (
                     <Text
@@ -254,7 +254,7 @@ class Search extends Component {
                         fontSize: 20,
                         color: '#656565',
                       }}>
-                      Fiyata göre artan
+                      Fiyata göre azalan
                     </Text>
                   )}
                 </TouchableOpacity>
@@ -271,7 +271,7 @@ class Search extends Component {
                         fontSize: 20,
                         color: 'red',
                       }}>
-                      Fiyata göre azalan
+                      Fiyata göre artan
                     </Text>
                   ) : (
                     <Text
@@ -280,7 +280,7 @@ class Search extends Component {
                         fontSize: 20,
                         color: '#656565',
                       }}>
-                      Fiyata göre azalan
+                      Fiyata göre artan
                     </Text>
                   )}
                 </TouchableOpacity>
@@ -362,7 +362,7 @@ class Search extends Component {
 const mapStateToProps = ({searchResponse}) => {
   const searchData = searchResponse.data;
   const loading = searchResponse.loading;
- 
+  console.log(searchData,"ss", loading);
   return {searchData, loading};
 };
 export default connect(mapStateToProps, {

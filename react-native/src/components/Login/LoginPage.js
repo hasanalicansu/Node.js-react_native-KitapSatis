@@ -197,7 +197,7 @@ class LoginPage extends Component {
 
 const mapStateToProps = ({loginResponse, tokenLoginResponse}) => {
   const tokenLoading = tokenLoginResponse.loading;
-  
+  console.log(tokenLoading);
   const loading = loginResponse.loading;
   return {loading, tokenLoading};
 };

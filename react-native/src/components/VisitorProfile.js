@@ -147,7 +147,7 @@ class VisitorProfile extends Component {
 
 const mapStateToProps = ({visitorProfileResponse}) => {
   const dataSale = visitorProfileResponse;
- 
+  console.log(dataSale, 'dataaa');
   return {dataSale};
 };
 export default connect(mapStateToProps, {

@@ -7,7 +7,7 @@ import AsyncStorage from '@react-native-community/async-storage';
 export const GetProductDataOwner =  (id) => {
     return async (dispatch) => {
       const userToken = await AsyncStorage.getItem('tokenKitapHAC');
-      const res = await axios.get('http://localhost:3000/api/product/GetProductOwner/'+id, {
+      const res = await axios.get('https://kitapsatis.herokuapp.com/api/product/GetProductOwner/'+id, {
         headers: {
           Authorization: "Bearer "+userToken,
         },
@@ -23,17 +23,18 @@ export const GetVisitorSaleProduct =  (id) => {
   return async (dispatch) => {
    try {
     const userToken = await AsyncStorage.getItem('tokenKitapHAC');
-   
-    const res = await axios.get('http://localhost:3000/api/product/GetVisitorProduct/'+id, {
+    console.log("girdi");
+    const res = await axios.get('https://kitapsatis.herokuapp.com/api/product/GetVisitorProduct/'+id, {
       headers: {
         Authorization: "Bearer "+userToken,
       },
     });
-   
+    console.log(res,"hako");
+    console.log(res.data,"hasalica");
     
     dispatch({type: GET_PRODUCT_SALE_VISITOR, payload: res.data})
    } catch (error) {
-  
+    console.log("hata");
     console.log(error);
    }
   };
@@ -43,14 +44,14 @@ export const GetVisitorSaleProduct =  (id) => {
 export const PlusCounterProduct =  (id) => {
   return  async() => {
     const userToken = await AsyncStorage.getItem('tokenKitapHAC');
-    const res=await axios.get('http://localhost:3000/api/product/plusCounterProduct/'+id, {
+    const res=await axios.get('https://kitapsatis.herokuapp.com/api/product/plusCounterProduct/'+id, {
       headers: {
         Authorization: "Bearer "+userToken,
       },
     });
-    
+    console.log(res.status);
     if (res.status==200) {
-   
+      console.log(res.data);
       RooterNavigation.navigate('ProductDetail', {
         data: res.data,
       });

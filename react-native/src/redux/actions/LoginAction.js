@@ -30,14 +30,14 @@ export const loginUser = ({email, password}) => {
     } else {
       axios({
         method: 'post',
-        url: 'http://localhost:3000/api/users/login',
+        url: 'https://kitapsatis.herokuapp.com/api/users/login',
         data: {
           email: email,
           password: password,
         },
       })
         .then(async (user) => {
-         
+          console.log(user.data);
           const resToken = await saveData('tokenKitapHAC', user.data.token);
           const resName = await saveData('nameKitapHAC', user.data.user.name);
           const resId = await saveData('idKitapHAC', user.data.user._id);
@@ -57,7 +57,7 @@ export const loginUser = ({email, password}) => {
             'universityKitapHAC',
             user.data.user.userUniversity,
           );
-         
+          console.log(resUniversity);
           readData();
         })
         .then(() => loginSuccess(dispatch))
@@ -99,9 +99,10 @@ export const RegisterUser = ({
       dispatch({
         type: REGISTER_USER,
       });
-    
+      console.log(name, surname, email, password, userUniversity,userUniversityId);
+      
       const res = await axios.post(
-        'http://localhost:3000/api/users/createAccount',
+        'https://kitapsatis.herokuapp.com/api/users/createAccount',
         {
           name: name,
           surname: surname,
@@ -117,7 +118,7 @@ export const RegisterUser = ({
         },
       );
       if (res.status == 206) {
-      
+        console.log(res.status);
         Alert.alert(
           'HATA',
           res.data.msg,
@@ -152,7 +153,7 @@ export const loginWithToken = () => {
       if (token) {
         const tokenGo = (await 'Bearer ') + token;
         const res = await axios.get(
-          'http://localhost:3000/api/users/login/token',
+          'https://kitapsatis.herokuapp.com/api/users/login/token',
           {
             headers: {
               Authorization: tokenGo,
@@ -195,14 +196,14 @@ const saveData = async (dataName, data) => {
 const readData = async () => {
   try {
     const userToken = await AsyncStorage.getItem('tokenKitapHAC');
- 
+    console.log(userToken);
   } catch (e) {
     alert('Failed to fetch the data from storage');
   }
 };
 
 const loginSuccess = (dispatch) => {
- 
+  console.log('darararö');
   dispatch({
     type: LOGIN_USER_SUCCESS,
   });

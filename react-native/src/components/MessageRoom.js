@@ -24,7 +24,7 @@ export default class MessageRoom extends Component {
     socket.on('SendMessageRoom', (data) => {
       this.state.roomData = data;
       this.setState({roomData: data});
-     
+      console.log(this.state.roomData);
     });
     
   }

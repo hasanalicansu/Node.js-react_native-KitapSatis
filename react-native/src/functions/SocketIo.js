@@ -6,7 +6,7 @@ const connectionConfig = {
     reconnectionAttempts: 100000,
     transports: ['websocket']
    };
-socket = io('http://localhost:80',connectionConfig);
+socket = io('https://kitapsatis.herokuapp.com',connectionConfig);
 
 module.exports={
     socket

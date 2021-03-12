@@ -21,8 +21,8 @@ export default class MessageRoomComponents extends Component {
     url: '',
   };
   async componentDidMount() {
-    socket = io('http://localhost:80');
-    
+    socket = io('https://kitapsatis.herokuapp.com');
+    console.log(this.props.data._id);
     socket.emit('GetProductDetail', {Id: this.props.data.productId});
     socket.on('SendProductDetail', async (data) => {
       this.setState({

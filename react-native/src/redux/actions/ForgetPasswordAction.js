@@ -7,11 +7,11 @@ import Toast from 'react-native-simple-toast';
 
 export const ForgetPasswordFunction = (email) => {
   return async (dispatch) => {
-    
+    console.log(email);
     dispatch({type: FORGET_USER});
 
     const res = await axios.post(
-      'http://localhost:3000/api/users/forgetPassword',
+      'https://kitapsatis.herokuapp.com/api/users/forgetPassword',
       {
         email
       },
@@ -22,7 +22,7 @@ export const ForgetPasswordFunction = (email) => {
       },
     );
 
-   
+    console.log(res.status);
     if (res.status == 206) {
       dispatch({type: FORGET_USER_FAIL});
       Toast.showWithGravity(res.data.msg, Toast.SHORT, Toast.TOP);

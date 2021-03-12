@@ -46,7 +46,7 @@ class UserProfile extends Component {
         avatarUrl: url,
       });
 
-     
+      console.log(nameT, surnameT, universityT);
     });
   }
   render() {
@@ -92,7 +92,7 @@ class UserProfile extends Component {
                 width: 115,
                 height: 115,
                 borderRadius: 20,
-                backgroundColor: 'orange',
+                
               }}>
               {this.state.avatarUrl == '' ? (
                 <MaterialIndicator></MaterialIndicator>

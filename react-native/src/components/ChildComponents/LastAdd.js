@@ -50,6 +50,7 @@ class LastAdd extends Component {
               justifyContent: 'center',
               marginTop: 20,
               marginLeft: 10,
+              
             }}>
             <View
               style={{

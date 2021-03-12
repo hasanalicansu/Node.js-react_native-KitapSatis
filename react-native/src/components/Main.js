@@ -46,9 +46,10 @@ class Main extends Component {
                     style={{
                       fontSize: 28,
                       fontFamily: 'AppleSDGothicNeo-Light',
-                      color:"#FFF"
+                      color:"#FFF",
+                      fontWeight:"900"
                     }}>
-                    Sirekt ismi
+                    üstdönem
                   </Text>
                 </View>
               </View>
@@ -100,19 +101,20 @@ class Main extends Component {
             borderTopLeftRadius: 20,
             borderTopRightRadius: 20,
             flex: 1,
-            backgroundColor: '#FFF',
+            backgroundColor: '#F8F9F9',
             marginTop: -20,
-            
+          
           }}>
-          <View style={{backgroundColor: '#FFF'}}>
-            <View style={{marginLeft: 15, marginTop: 20}}>
+          <View style={{}}>
+            <View style={{marginLeft: 15, marginTop: height*0.04}}>
               <Text
                 style={{
                   fontFamily: 'Avenir-Black',
                   fontSize: 23,
                   color: '#000000',
+                  textAlign:"center"
                 }}>
-                Son Eklenenler
+                Son eklenenler
               </Text>
             </View>
             <FlatList
@@ -126,13 +128,14 @@ class Main extends Component {
             />
           </View>
 
-          <View style={{marginTop: 40, backgroundColor: '#FFF',marginBottom:30}}>
+          <View style={{marginTop: 40,marginBottom:30}}>
             <View style={{marginLeft: 15}}>
               <Text
                 style={{
                   fontFamily: 'Avenir-Black',
                   fontSize: 23,
                   color: '#000000',
+                  textAlign:"center"
                 }}>
                 Çok ziyaret edilenler
               </Text>

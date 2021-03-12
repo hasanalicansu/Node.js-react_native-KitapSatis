@@ -22,9 +22,9 @@ export const SearchProduct = (title,universiteId,sıralama) => {
         add+="&sortBy="+sıralama
       }
       universiteId="karadağ"
-    
+      console.log(add,"add",universiteId);
       dispatch({type: SEARCH_PRODUCT});
-      const res = await axios.get('http://localhost:3000/api/product/GetSearch?title='+title+add, {
+      const res = await axios.get('https://kitapsatis.herokuapp.com/api/product/GetSearch?title='+title+add, {
         headers: {
           Authorization: "Bearer "+userToken,
         },
