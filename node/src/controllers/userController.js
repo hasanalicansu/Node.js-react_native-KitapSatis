@@ -111,7 +111,7 @@ const forgetPassword = async (req, res, next) => {
         //MAIL GONDERME ISLEMLERI
         const url =
           process.env.WEB_SITE_URL +
-          "api/users/reset-password/" +
+          "/api/users/reset-password/" +
           _user._id +
           "/" +
           jwtToken;
@@ -126,7 +126,7 @@ const forgetPassword = async (req, res, next) => {
 
         await transporter.sendMail(
           {
-            from: "Kitap Uygulaması <ounoyna@gmail.com",
+            from: "Kitap Uygulaması <ounoyna@gmail.com>",
             to: _user.email,
             subject: "Şifre Güncelleme",
             text: "Şifrenizi oluşturmak için lütfen şu linki tıklayın:" + url,

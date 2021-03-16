@@ -18,6 +18,7 @@
     "react-native-flatlist-slider": "^1.0.5",
     "react-native-image-crop-picker": "^0.35.3",
     "react-native-indicators": "^0.17.0",
+    "react-native-keyboard-aware-scroll-view": "^0.9.3",
     "react-native-onboarding-swiper": "^1.1.4",
     "react-native-raw-bottom-sheet": "^2.2.0",
     "react-native-simple-toast": "^1.1.3",

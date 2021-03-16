@@ -2,7 +2,7 @@ const Product = require("../models/productModel");
 const User = require("../models/userModel");
 const Favorite = require("../models/favoriteModel");
 const MessageRoom = require("../models/messageRoomModel");
-const { number } = require("@hapi/joi");
+
 
 
 const createNewProduct = async (req, res, next) => {
@@ -263,8 +263,9 @@ const GetSearch = async (req, res, next) => {
     
     const result = await Product.find({}, {})
       .or([
-        { productDetail: { $regex: ".*" + req.query.title + ".*" } },
-        { productTitle: { $regex: ".*" + req.query.title + ".*" } },
+        { productDetail: { $regex: ".*" + req.body.title + ".*" } },
+        { productTitle: { $regex: ".*" + req.body.title + ".*" } },
+        { author: { $regex: ".*" + req.body.title + ".*" } }
       ])
       .and([{ situation: true},queryCond])
       .sort(queryCondSort);

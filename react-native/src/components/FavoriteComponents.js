@@ -33,7 +33,7 @@ class FavoriteComponents extends Component {
 
   async componentDidMount() {
     const photoUrl = await downloadImage(this.props.data._id);
-    console.log(photoUrl);
+
     this.setState({image: photoUrl});
   }
 

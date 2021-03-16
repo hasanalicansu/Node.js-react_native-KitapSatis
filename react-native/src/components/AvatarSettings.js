@@ -36,7 +36,7 @@ class AvatarSettings extends Component {
       cropping: true,
     }).then((image) => {
       this.setState({ProfilePhoto: image});
-      console.log(this.state.ProfilePhoto, 'push');
+    
       this.props.NewProfilePhoto(image);
     });
   }
@@ -91,7 +91,7 @@ class AvatarSettings extends Component {
 
 const mapStateToProps = ({avatarResponse}) => {
   const loading = avatarResponse.loading;
-  console.log(loading, 'avatar');
+
   return {loading};
 };
 

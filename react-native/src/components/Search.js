@@ -362,13 +362,9 @@ class Search extends Component {
 const mapStateToProps = ({searchResponse}) => {
   const searchData = searchResponse.data;
   const loading = searchResponse.loading;
-  console.log(searchData,"ss", loading);
+ 
   return {searchData, loading};
 };
 export default connect(mapStateToProps, {
   SearchProduct,
 })(Search);
-
-/*<SearchComponents
-                  navi={this.props}
-                  data={item}></SearchComponents> */

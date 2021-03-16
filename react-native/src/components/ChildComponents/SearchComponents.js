@@ -19,7 +19,9 @@ import {
   UIActivityIndicator,
 } from 'react-native-indicators';
 
-import {PlusCounterProduct} from '../../redux/actions';
+
+
+import {PlusCounterProduct,AddFavoriteProduct} from '../../redux/actions';
 import {connect} from 'react-redux';
 (width = Dimensions.get('window').width),
   (height = Dimensions.get('window').height);
@@ -31,7 +33,7 @@ import {connect} from 'react-redux';
 
   async componentDidMount() {
     const photoUrl = await downloadImage(this.props.data._id);
-    console.log(photoUrl);
+    
     this.setState({image: photoUrl});
   }
   render() {
@@ -93,7 +95,11 @@ import {connect} from 'react-redux';
                 {this.props.data.productPrice} TL
               </Text>
             </View>
-            <TouchableOpacity>
+            <TouchableOpacity 
+            onPress={() => {
+              this.props.AddFavoriteProduct(this.props.data._id);
+            }}
+            >
               <Image
                 style={{
                   width: 35,
@@ -146,5 +152,6 @@ import {connect} from 'react-redux';
 
 export default connect(null, {
   
-  PlusCounterProduct
+  PlusCounterProduct,
+  AddFavoriteProduct
 })(SearchComponents);

@@ -17,7 +17,7 @@ router.get("/GetVisitorProduct/:id", authMiddleware, productController.GetVisito
 router.get("/GetOwnerProductOnSale", authMiddleware, productController.GetOwnerProductOnSale); //Kullanıcının satıştaki ürünlrini getirir
 router.get("/GetOwnerProductSold", authMiddleware, productController.GetOwnerProductSold); //Kullanıcının satılan ürünlerini getirir
 
-router.get("/GetSearch", authMiddleware, productController.GetSearch); //Kullanıcının satılan ürünlerini getirir
+router.post("/GetSearch", authMiddleware, productController.GetSearch); 
 
 
 

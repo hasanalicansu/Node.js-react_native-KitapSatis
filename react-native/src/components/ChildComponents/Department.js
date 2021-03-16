@@ -21,7 +21,7 @@ class Department extends Component {
   async componentDidMount() {
     const userUni = await AsyncStorage.getItem('uniKitapHAC');
     const userUniId = await AsyncStorage.getItem('uniIdKitapHAC');
-    console.log(userUni, userUniId);
+   
     this.setState({universite: userUni, universiteId: userUniId});
   }
   render() {
@@ -35,7 +35,7 @@ class Department extends Component {
           <View
             style={{
               width: width * 0.7,
-              //backgroundColor: '#6C3483',//FACD5C
+              
               height: 50,
               borderRadius: 5,
               justifyContent: 'center',
@@ -47,7 +47,7 @@ class Department extends Component {
                 fontSize: 20,
                 textAlign: 'center',
                 fontFamily: 'Avenir-Black',
-                color: '#FACD5C', //6B4DAD FACD5C
+                color: '#FACD5C', 
                 marginHorizontal: 20,
                 shadowColor: '#F3DCFC',
                 shadowOffset: {
@@ -71,41 +71,3 @@ class Department extends Component {
 export default connect(null, {
   SearchProduct,
 })(Department);
-
-/*    <View style={{flexDirection: 'column'}}>
-        <View>
-          <Text
-            style={{
-              fontFamily: 'Avenir-Black',
-              fontSize: 23,
-              color: '#000000',
-            }}>
-            {' '}
-            Bölümler
-          </Text>
-        </View>
-        <TouchableOpacity>
-          <View
-            style={{
-              width: 210,
-              backgroundColor: '#FACD5C',
-              height: 70,
-              borderRadius: 7,
-              justifyContent: 'center',
-              marginTop: 20,
-              marginLeft: 10,
-            }}>
-            <Text
-              style={{
-                fontSize: 22,
-                textAlign: 'center',
-                fontFamily: 'Avenir-Heavy',
-                color: '#6B4DAD',
-                opacity: 1,
-              }}>
-              Bilgisayar Müh
-            </Text>
-          </View>
-        </TouchableOpacity>
-      </View>
-   */

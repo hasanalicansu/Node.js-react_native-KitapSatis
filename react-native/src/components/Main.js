@@ -46,8 +46,8 @@ class Main extends Component {
                     style={{
                       fontSize: 28,
                       fontFamily: 'AppleSDGothicNeo-Light',
-                      color:"#FFF",
-                      fontWeight:"900"
+                      color: '#FFF',
+                      fontWeight: '900',
                     }}>
                     üstdönem
                   </Text>
@@ -96,59 +96,78 @@ class Main extends Component {
         </View>
 
         <ScrollView
+          showsVerticalScrollIndicator={false}
           bounces={false}
           style={{
-            borderTopLeftRadius: 20,
-            borderTopRightRadius: 20,
             flex: 1,
             backgroundColor: '#F8F9F9',
             marginTop: -20,
-          
           }}>
           <View style={{}}>
-            <View style={{marginLeft: 15, marginTop: height*0.04}}>
+            <View style={{marginLeft: 15, marginTop: height * 0.04}}>
               <Text
                 style={{
                   fontFamily: 'Avenir-Black',
                   fontSize: 23,
                   color: '#000000',
-                  textAlign:"center"
+                  textAlign: 'center',
                 }}>
                 Son eklenenler
               </Text>
             </View>
-            <FlatList
-              showsHorizontalScrollIndicator={false}
-              horizontal={true}
-              data={this.props.mainData.resNew}
-              renderItem={({item}) => (
-                <LastAdd navi={this.props} data={item}></LastAdd>
-              )}
-              keyExtractor={(item) => item._id}
-            />
+            {!this.props.loading  ? (
+              <FlatList
+                showsHorizontalScrollIndicator={false}
+                horizontal={true}
+                data={this.props.mainData.resNew}
+                renderItem={({item}) => (
+                  <LastAdd navi={this.props} data={item}></LastAdd>
+                )}
+                keyExtractor={(item) => item._id}
+              />
+            ) : (
+              <MaterialIndicator
+              color={"#FACD5C"}
+                style={{
+                  width: 280,
+                  alignSelf: 'center',
+                  height: 150,
+                }}></MaterialIndicator>
+            )}
           </View>
 
-          <View style={{marginTop: 40,marginBottom:30}}>
+          <View style={{marginTop: 40, marginBottom: 30}}>
             <View style={{marginLeft: 15}}>
               <Text
                 style={{
                   fontFamily: 'Avenir-Black',
                   fontSize: 23,
                   color: '#000000',
-                  textAlign:"center"
+                  textAlign: 'center',
                 }}>
                 Çok ziyaret edilenler
               </Text>
             </View>
-            <FlatList
-              showsHorizontalScrollIndicator={false}
-              horizontal={true}
-              data={this.props.mainData.resMost}
-              renderItem={({item}) => (
-                <LastAdd navi={this.props} data={item}></LastAdd>
-              )}
-              keyExtractor={(item) => item._id}
-            />
+            {!this.props.loading ? (
+              <FlatList
+                showsHorizontalScrollIndicator={false}
+                horizontal={true}
+                data={this.props.mainData.resMost}
+                renderItem={({item}) => (
+                  <LastAdd navi={this.props} data={item}></LastAdd>
+                )}
+                keyExtractor={(item) => item._id}
+              />
+            ) : (
+              <MaterialIndicator
+              color={"#FACD5C"}
+                style={{
+                  width: 280,
+                  alignSelf: 'center',
+                  height: 150,
+                  
+                }}></MaterialIndicator>
+            )}
           </View>
         </ScrollView>
       </View>
@@ -158,12 +177,7 @@ class Main extends Component {
 
 const mapStateToProps = ({getMainResponse}) => {
   const mainData = getMainResponse.data;
-  return {mainData};
+  const loading =getMainResponse.loading;
+  return {mainData,loading};
 };
 export default connect(mapStateToProps, {GetMainProduct})(Main);
-
-/*
- <View style={{alignItems: 'center'}}>
-            <Department navi={this.props}></Department>
-          </View>
- */

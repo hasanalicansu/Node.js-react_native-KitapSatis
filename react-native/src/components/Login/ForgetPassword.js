@@ -31,8 +31,10 @@ class ForgetPassword extends Component {
   };
 
   send() {
-    const {email} = this.state;
-    this.props.ForgetPasswordFunction(email);
+    if (!this.state.email=='') {
+      const {email} = this.state;
+      this.props.ForgetPasswordFunction(email);
+    } 
   }
 
   render() {
@@ -42,6 +44,21 @@ class ForgetPassword extends Component {
           flex: 1,
           backgroundColor: '#2D4059',
         }}>
+          <SafeAreaView>
+          <TouchableOpacity
+            onPress={() => {
+              this.props.navigation.goBack();
+            }}>
+            <Image
+              source={require('../../assets/back.png')}
+              style={{
+                width: 20,
+                height: 20,
+                marginLeft: 20,
+              }}
+            />
+          </TouchableOpacity>
+        </SafeAreaView>
         {this.props.tokenLoading ? (
           <PacmanIndicator color={'#FFB702'}></PacmanIndicator>
         ) : (
@@ -122,7 +139,7 @@ class ForgetPassword extends Component {
 }
 
 const mapStateToProps = ({forgetPasswordResponse}) => {
-    console.log(forgetPasswordResponse);
+    
   const loading = forgetPasswordResponse.loading;
   return {loading};
 };

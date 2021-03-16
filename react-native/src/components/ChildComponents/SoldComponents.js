@@ -141,7 +141,7 @@ class SoldComponents extends Component {
           </View>
         
           <Text style={{fontSize: 16, fontFamily: 'Avenir-Light'}}>
-            02.11.2010
+            {null}
           </Text>
         </View>
         </View>

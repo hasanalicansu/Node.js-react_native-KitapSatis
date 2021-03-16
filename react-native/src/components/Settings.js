@@ -20,10 +20,6 @@ import {
   UIActivityIndicator,
 } from 'react-native-indicators';
 
-/*
-import {Logout} from '../redux/actions';
-import {connect} from 'react-redux';
-*/
 
 export default class Settings extends Component {
   render() {

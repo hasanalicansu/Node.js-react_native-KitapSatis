@@ -32,8 +32,7 @@ class ProductDetail extends Component {
       this.props.route.params.data.productPhoto,
     );
     socket.on('SendRoomId', (data) => {
-      console.log('detail', data.data._id);
-      console.log(this.props.images[0].image,"ddddddd")
+     
       this.props.navigation.navigate('MessageContent', {
         roomId: data.data._id,
         
@@ -235,7 +234,7 @@ class ProductDetail extends Component {
 const mapStateToProps = ({getProductDataResponse, getImageResponse}) => {
   const ownerData = getProductDataResponse;
   const images = getImageResponse.data;
-  console.log(images, 'compooo');
+ 
   const loading = getImageResponse.loading;
   return {ownerData, images, loading};
 };

@@ -91,9 +91,9 @@ class Sold extends Component {
   }
 }
 
-const mapStateToProps = ({getMineProductResponse}) => {
-  const soldData = getMineProductResponse;
-  console.log(soldData.length, 'sold');
+const mapStateToProps = ({getMineSoldProductResponse}) => {
+  const soldData = getMineSoldProductResponse;
+
   return {soldData};
 };
 export default connect(mapStateToProps, {GetOwnProductSold})(Sold);

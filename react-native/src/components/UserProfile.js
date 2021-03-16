@@ -45,8 +45,6 @@ class UserProfile extends Component {
         university: universityT,
         avatarUrl: url,
       });
-
-      console.log(nameT, surnameT, universityT);
     });
   }
   render() {

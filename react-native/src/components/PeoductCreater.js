@@ -85,7 +85,7 @@ class PeoductCreater extends Component {
                 }).then((image) => {
                   this.state.photoArray[0] = image;
                   this.setState({photoArray: this.state.photoArray});
-                  console.log(this.state.photoArray, 'push');
+                 
                 });
               }}>
               <View
@@ -121,11 +121,10 @@ class PeoductCreater extends Component {
                   height: 400,
                   cropping: true,
                 }).then((image) => {
-                  console.log(image, 'burası');
+                 
                   this.state.photoArray[1] = image;
                   this.setState({photoArray: this.state.photoArray});
-                  console.log(this.state.photoArray, 'push');
-                  //this.setState({photo2: image});
+                  
                 });
               }}>
               <View
@@ -162,11 +161,10 @@ class PeoductCreater extends Component {
                   height: 400,
                   cropping: true,
                 }).then((image) => {
-                  console.log(image, 'burası');
+                 
                   this.state.photoArray[2] = image;
                   this.setState({photoArray: this.state.photoArray});
-                  console.log(this.state.photoArray, 'push');
-                  //this.setState({photo3: image});
+                  
                 });
               }}>
               <View

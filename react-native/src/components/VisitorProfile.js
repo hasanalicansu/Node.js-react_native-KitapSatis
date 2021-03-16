@@ -8,7 +8,7 @@ import {
   ScrollView,
   FlatList,
 } from 'react-native';
-//BookLover
+
 import {GetVisitorSaleProduct, AddFavoriteProduct} from '../redux/actions';
 import {connect} from 'react-redux';
 import VisitorProfileProductComponent from './ChildComponents/VisitorProfileProductComponent';
@@ -147,7 +147,7 @@ class VisitorProfile extends Component {
 
 const mapStateToProps = ({visitorProfileResponse}) => {
   const dataSale = visitorProfileResponse;
-  console.log(dataSale, 'dataaa');
+ 
   return {dataSale};
 };
 export default connect(mapStateToProps, {

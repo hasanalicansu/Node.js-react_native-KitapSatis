@@ -32,7 +32,7 @@ class OnSaleComponents extends Component {
 
   async componentDidMount() {
     const photoUrl = await downloadImage(this.props.data._id);
-    console.log(photoUrl);
+   
     this.setState({image: photoUrl});
   }
 
@@ -145,7 +145,7 @@ class OnSaleComponents extends Component {
           </View>
         
           <Text style={{fontSize: 16, fontFamily: 'Avenir-Light'}}>
-            02.11.2010
+            {null}
           </Text>
         </View>
         </View>

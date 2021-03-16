@@ -13,20 +13,29 @@ import MessageRoomComponents from './ChildComponents/MessageRoomComponents';
 import AsyncStorage from '@react-native-community/async-storage';
 (width = Dimensions.get('window').width),
   (height = Dimensions.get('window').height);
-dataa = [1, 2];
+import {
+  DotIndicator,
+  BallIndicator,
+  WaveIndicator,
+  MaterialIndicator,
+  PacmanIndicator,
+  PulseIndicator,
+  SkypeIndicator,
+  UIActivityIndicator,
+} from 'react-native-indicators';
+
 import {socket} from '../functions/SocketIo';
 
 export default class MessageRoom extends Component {
-  state = {roomData: []};
+  state = {roomData: [], dataLoading: true};
   async componentDidMount() {
     const userId = await AsyncStorage.getItem('idKitapHAC');
     socket.emit('GetMessageRoom', {userId: userId});
     socket.on('SendMessageRoom', (data) => {
       this.state.roomData = data;
-      this.setState({roomData: data});
-      console.log(this.state.roomData);
+      this.setState({roomData: data, dataLoading: false});
+     
     });
-    
   }
 
   render() {
@@ -46,20 +55,25 @@ export default class MessageRoom extends Component {
               Mesajlar
             </Text>
           </View>
-          <View style={{marginTop: 20, flex: 1}}>
-            <FlatList
-              bounces={false}
-              data={this.state.roomData.data}
-              renderItem={({item}) => (
-                <View>
-                  <MessageRoomComponents
-                    navi={this.props}
-                    data={item}></MessageRoomComponents>
-                </View>
-              )}
-              keyExtractor={(item) => item._id}
-            />
-          </View>
+          {this.state.dataLoading ? (
+            <UIActivityIndicator></UIActivityIndicator>
+          ) : (
+            <View style={{marginTop: 20, flex: 1}}>
+              <FlatList
+                bounces={false}
+                data={this.state.roomData.data}
+                renderItem={({item}) => (
+                  <View>
+                    <MessageRoomComponents
+                      navi={this.props}
+                      data={item}>
+                      </MessageRoomComponents>
+                  </View>
+                )}
+                keyExtractor={(item) => item._id}
+              />
+            </View>
+          )}
         </View>
       </SafeAreaView>
     );
